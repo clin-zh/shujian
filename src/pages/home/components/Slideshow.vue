@@ -3,40 +3,9 @@
     <div class="banxin">
       <div class="nav">
         <ul>
-          <li>
-            <span class="icon icon1"></span>文学艺术
-            <span class="arrow"></span>
-          </li>
-          <li>
-            <span class="icon icon2"></span>少儿童书
-            <span class="arrow"></span>
-          </li>
-          <li>
-            <span class="icon icon3"></span>人文社科
-            <span class="arrow"></span>
-          </li>
-          <li>
-            <span class="icon icon4"></span>经管励志
-            <span class="arrow"></span>
-          </li>
-          <li>
-            <span class="icon icon5"></span>生活时尚
-            <span class="arrow"></span>
-          </li>
-          <li>
-            <span class="icon icon6"></span>科技教育
-            <span class="arrow"></span>
-          </li>
-          <li>
-            <span class="icon icon7"></span>创意文具
-            <span class="arrow"></span>
-          </li>
-          <li>
-            <span class="icon icon8"></span>生活美学
-            <span class="arrow"></span>
-          </li>
-          <li>
-            <span class="icon icon9"></span>影音原版
+          <li v-for="item in itemList" :key="item.id">
+            <span :class="item.style"></span>
+            {{ item.name }}
             <span class="arrow"></span>
           </li>
         </ul>
@@ -93,29 +62,8 @@
     </div>
     <div class="slide">
       <ul>
-        <li>
-          <img src="~@/assets/images/slide01.jpg" alt="轮播图1">
-        </li>
-        <li>
-          <img src="~@/assets/images/slide02.jpg" alt="轮播图2">
-        </li>
-        <li>
-          <img src="~@/assets/images/slide03.jpg" alt="轮播图3">
-        </li>
-        <li>
-          <img src="~@/assets/images/slide04.jpg" alt="轮播图4">
-        </li>
-        <li>
-          <img src="~@/assets/images/slide05.jpg" alt="轮播图5">
-        </li>
-        <li>
-          <img src="~@/assets/images/slide06.jpg" alt="轮播图6">
-        </li>
-        <li>
-          <img src="~@/assets/images/slide07.jpg" alt="轮播图7">
-        </li>
-        <li>
-          <img src="~@/assets/images/slide08.jpg" alt="轮播图8">
+        <li v-for="item of slideList" :key="item.id">
+          <img :src="item.imgUrl" alt="图片">
         </li>
       </ul>
       <ol>
@@ -135,7 +83,92 @@
 
 <script>
 export default {
-  name: "SlideShow"
+  name: "SlideShow",
+  data() {
+    return {
+      slideList: [
+        {
+          id: "001",
+          imgUrl: require("../../../assets/images/slide01.jpg")
+        },
+        {
+          id: "002",
+          imgUrl: require("../../../assets/images/slide02.jpg")
+        },
+        {
+          id: "003",
+          imgUrl: require("../../../assets/images/slide03.jpg")
+        },
+        {
+          id: "004",
+          imgUrl: require("../../../assets/images/slide04.jpg")
+        },
+        {
+          id: "005",
+          imgUrl: require("../../../assets/images/slide05.jpg")
+        },
+        {
+          id: "006",
+          imgUrl: require("../../../assets/images/slide06.jpg")
+        },
+        {
+          id: "007",
+          imgUrl: require("../../../assets/images/slide07.jpg")
+        },
+        {
+          id: "008",
+          imgUrl: require("../../../assets/images/slide08.jpg")
+        }
+      ],
+      itemList: [
+        {
+          id: "01",
+          name: "文学艺术",
+          style: "icon icon1"
+        },
+        {
+          id: "02",
+          name: "少儿童书",
+          style: "icon icon2"
+        },
+        {
+          id: "03",
+          name: "人文社科",
+          style: "icon icon3"
+        },
+        {
+          id: "04",
+          name: "经管励志",
+          style: "icon icon4"
+        },
+        {
+          id: "05",
+          name: "生活时尚",
+          style: "icon icon5"
+        },
+        {
+          id: "06",
+          name: "科技教育",
+          style: "icon icon6"
+        },
+        {
+          id: "07",
+          name: "创意文具",
+          style: "icon icon7"
+        },
+        {
+          id: "08",
+          name: "生活美学",
+          style: "icon icon8"
+        },
+        {
+          id: "09",
+          name: "影音原版",
+          style: "icon icon9"
+        }
+      ]
+    };
+  }
 };
 </script>
 
@@ -159,6 +192,7 @@ export default {
       background-color: #ccc;
       margin-left: 0px;
       li {
+        height: 100%;
         float: left;
       }
     }

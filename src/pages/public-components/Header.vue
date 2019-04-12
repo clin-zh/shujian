@@ -51,14 +51,28 @@
         </div>
         <div class="nav">
           <ul>
-            <li class="active">首页</li>
-            <li>新品</li>
-            <li>限时购</li>
-            <li>排行榜</li>
+            <router-link to="/">
+              <li>首页</li>
+            </router-link>
+            <router-link to="/newbook">
+              <li>新品</li>
+            </router-link>
+            <router-link to="/">
+              <li>限时购</li>
+            </router-link>
+            <router-link to="/">
+              <li>排行榜</li>
+            </router-link>
             <span>|</span>
-            <li>图书馆</li>
-            <li>文创馆</li>
-            <li>生活美学馆</li>
+            <router-link to="/">
+              <li>图书馆</li>
+            </router-link>
+            <router-link to="/">
+              <li>文创馆</li>
+            </router-link>
+            <router-link to="/">
+              <li>生活美学馆</li>
+            </router-link>
           </ul>
         </div>
       </div>
@@ -69,7 +83,11 @@
 
 <script>
 export default {
-  name: "Header"
+  name: "Header",
+  data() {
+    return {}
+  },
+  methods: {}
 };
 </script>
 
@@ -255,6 +273,7 @@ export default {
             float: left;
             line-height: 40px;
             font-size: 16px;
+            color: #666;
           }
           li:hover {
             color: #2db4ea;

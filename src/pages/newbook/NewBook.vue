@@ -1,29 +1,25 @@
 <template>
   <div>
     <Header></Header>
-    <slide-show></slide-show>
-    <flash-sale></flash-sale>
+    <New></New>
     <Footer></Footer>
   </div>
 </template>
 
-
 <script>
 import Header from "../public-components/Header";
-import SlideShow from "./components/Slideshow";
-import FlashSale from "./components/Flashsale";
 import Footer from "../public-components/Footer";
+import New from "./components/New"
 
 export default {
-  name: "Home",
+  name: "NewBook",
   components: {
     Header,
-    SlideShow,
-    FlashSale,
-    Footer
+    Footer,
+    New
   }
 };
 </script>
 
-<style></style>
-
+<style>
+</style>
