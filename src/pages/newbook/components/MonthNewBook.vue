@@ -171,6 +171,7 @@ export default {
 <style lang="less" scoped>
 .box {
   background-color: #f0f0f0;
+  padding-bottom: 50px;
   .banxin {
     .title {
       width: 100%;

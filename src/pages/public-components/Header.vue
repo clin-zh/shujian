@@ -8,17 +8,29 @@
           <img src="~@/assets/images/phone.png" alt="phone">
           <span>下载书笺APP</span>
         </div>
-        <div class="header-right">
-          <span class="icon">
+
+        <ul class="header-right">
+          <li class="icon" @mouseenter="show" @mouseleave="hidden">
             我的书笺
             <i></i>
-          </span> |
-          <span>收藏夹</span> |
-          <span>店铺管理</span> |
-          <span>联系客服</span>
-        </div>
+            <ol class="item" v-show="ifshow">
+              <li>我的订单</li>
+              <li>我的优惠券</li>
+              <li>我的收藏</li>
+              <li>我的收入</li>
+              <li>官方消息</li>
+            </ol>
+          </li>
+          <span>|</span>
+          <li>收藏夹</li>
+          <span>|</span>
+          <li>店铺管理</li>
+          <span>|</span>
+          <li>联系客服</li>
+        </ul>
       </div>
     </div>
+
     <div class="center">
       <div class="banxin">
         <img src="~@/assets/images/logo.png" alt="logo">
@@ -43,6 +55,7 @@
         </div>
       </div>
     </div>
+
     <div class="bottom">
       <div class="banxin">
         <div class="all-commodity">
@@ -57,7 +70,7 @@
             <router-link to="/newbook">
               <li>新品</li>
             </router-link>
-            <router-link to="/">
+            <router-link to="/timetobuy">
               <li>限时购</li>
             </router-link>
             <router-link to="/">
@@ -80,14 +93,22 @@
   </div>
 </template>
 
-
 <script>
 export default {
   name: "Header",
   data() {
-    return {}
+    return {
+      ifshow: false,
+    };
   },
-  methods: {}
+  methods: {
+    show() {
+      this.ifshow = true;
+    },
+    hidden() {
+      this.ifshow = false;
+    }
+  }
 };
 </script>
 
@@ -100,23 +121,13 @@ export default {
   line-height: 30px;
   font-size: 12px;
   color: #666;
-
   .top {
     width: 100%;
     height: 30px;
     background-color: #f5f5f5;
-
     .banxin {
-      span {
-        cursor: pointer;
-        margin: 0 5px;
-      }
-      span:hover {
-        color: #2db4ea;
-      }
       .header-left {
         float: left;
-
         img {
           width: 18px;
           height: 18px;
@@ -125,22 +136,60 @@ export default {
       }
       .header-right {
         float: right;
+        span {
+          float: left;
+        }
+        li {
+          cursor: pointer;
+          padding: 0 20px;
+          float: left;
+          margin: 0 5px;
+          &:hover {
+            color: #2db4ea;
+          }
+        }
 
-        span.icon {
-          padding-right: 25px;
+        li.icon {
+          width: 68px;
+          padding: 0 10px;
+          z-index: 999;
           position: relative;
-
+          border: 1px solid transparent;
           i {
-            width: 8px;
-            height: 8px;
+            width: 6px;
+            height: 6px;
             border-right: 2px solid #666;
             border-bottom: 2px solid #666;
             transform: rotate(45deg);
             position: absolute;
             top: 50%;
-            right: 8px;
-            margin-top: -8px;
-            margin-left: 5px;
+            right: 10px;
+            margin-top: -6px;
+          }
+          &:hover {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-bottom: none;
+            i {
+              transform: rotate(-135deg);
+              margin-top: -2px;
+            }
+          }
+          .item {
+            position: absolute;
+            left: -1px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-top: none;
+            li {
+              padding: 0 5px;
+              width: 68px;
+              height: 30px;
+              color: #666;
+              &:hover {
+                color: #2db4ea;
+              }
+            }
           }
         }
       }
@@ -237,7 +286,6 @@ export default {
   .bottom {
     height: 40px;
     margin-top: 30px;
-
     .banxin {
       position: relative;
       .all-commodity {
