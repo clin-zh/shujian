@@ -3,8 +3,12 @@
     <div class="top">
       <div class="banxin">
         <div class="header-left">
-          <span>登陆</span> |
-          <span>免费注册</span>
+          <router-link to="/login">
+            <span>登陆</span>
+          </router-link>|
+          <router-link to="/register">
+            <span>免费注册</span>
+          </router-link>
           <img src="~@/assets/images/phone.png" alt="phone">
           <span>下载书笺APP</span>
         </div>
@@ -73,7 +77,7 @@
             <router-link to="/timetobuy">
               <li>限时购</li>
             </router-link>
-            <router-link to="/">
+            <router-link to="/ranking">
               <li>排行榜</li>
             </router-link>
             <span>|</span>
@@ -98,7 +102,7 @@ export default {
   name: "Header",
   data() {
     return {
-      ifshow: false,
+      ifshow: false
     };
   },
   methods: {
@@ -128,6 +132,13 @@ export default {
     .banxin {
       .header-left {
         float: left;
+        span {
+          color: #666;
+          margin: 0 5px;
+          &:hover {
+            color: #2db4ea;
+          }
+        }
         img {
           width: 18px;
           height: 18px;

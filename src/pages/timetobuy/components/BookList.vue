@@ -130,9 +130,8 @@ export default {
 </script>
 
 
-<style lang="less">
+<style lang="less" scoped>
 @import "~@/assets/style/main.less";
-
 .tonglan {
   background-color: #f0f0f0;
   padding: 30px 0;
