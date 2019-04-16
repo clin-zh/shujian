@@ -9,7 +9,7 @@
           <router-link to="/register">
             <span>免费注册</span>
           </router-link>
-          <img src="~@/assets/images/phone.png" alt="phone">
+          <img src="~@/assets/images/header/phone.png" alt="phone">
           <span>下载书笺APP</span>
         </div>
 
@@ -38,13 +38,13 @@
     <div class="center">
       <div class="banxin">
         <router-link to="/">
-          <img src="~@/assets/images/logo.png" alt="logo">
+          <img src="~@/assets/images/header/logo.png" alt="logo">
         </router-link>
 
         <div class="search">
           <input type="text" placeholder="余华">
           <button>
-            <img src="~@/assets/images/fangdajing.png" alt>
+            <img src="~@/assets/images/header/fangdajing.png" alt>
           </button>
         </div>
         <div class="keyword">
@@ -56,7 +56,7 @@
         </div>
         <div class="shopping-car">
           <a href="#">
-            <img src="~@/assets/images/shopping-car.png" alt>
+            <img src="~@/assets/images/header/shopping-car.png" alt>
             <span>购物车</span>
           </a>
         </div>
@@ -66,7 +66,7 @@
     <div class="bottom">
       <div class="banxin">
         <div class="all-commodity">
-          <img src="~@/assets/images/caidan.png" alt>
+          <img src="~@/assets/images/header/caidan.png" alt>
           所有商品分类
         </div>
         <div class="nav">
@@ -84,7 +84,7 @@
               <li>排行榜</li>
             </router-link>
             <span>|</span>
-            <router-link to="/">
+            <router-link to="/library">
               <li>图书馆</li>
             </router-link>
             <router-link to="/">

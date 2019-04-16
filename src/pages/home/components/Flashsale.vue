@@ -1,5 +1,5 @@
 <template>
-  <div class="flash-sale">
+  <div class="tonglan">
     <div class="banxin">
       <div class="title">
         <div class="title-left"></div>
@@ -11,112 +11,13 @@
       </div>
       <div class="slide-show">
         <ul>
-          <li>
-            <img src="~@/assets/images/flashsale01.jpg" alt>
-            <a>【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪</a>
+          <li v-for="item in timeLimitList" :key="item.id">
+            <img :src="item.img" alt>
+            <a>{{ item.name }}</a>
             <div>
-              <span class="price">￥1.90</span>
+              <span class="price">{{ item.newPrice }}</span>
               <span>|</span>
-              <span class="old-price">￥19.80</span>
-            </div>
-          </li>
-          <li>
-            <img src="~@/assets/images/flashsale02.jpg" alt>
-            <a>发现号特快(写给孩子的交通机械发明史)(精)</a>
-            <div>
-              <span class="price">¥64.00</span>
-              <span>|</span>
-              <span class="old-price">¥128.00</span>
-            </div>
-          </li>
-          <li>
-            <img src="~@/assets/images/flashsale03.jpg" alt>
-            <a>笨狼的故事注音版5册</a>
-            <div>
-              <span class="price">¥48.60</span>
-              <span>|</span>
-              <span class="old-price">¥100.00</span>
-            </div>
-          </li>
-          <li>
-            <img src="~@/assets/images/flashsale04.jpg" alt>
-            <a>【满59包邮不可用券】三叠纪劫掠战/恐龙帝国惊魂历险记</a>
-            <div>
-              <span class="price">￥1.90</span>
-              <span>|</span>
-              <span class="old-price">¥16.80</span>
-            </div>
-          </li>
-          <li>
-            <img src="~@/assets/images/flashsale05.jpg" alt>
-            <a>【满59包邮不可用券】 妙趣横生的人体/爆笑科技50问系列</a>
-            <div>
-              <span class="price">¥5.90</span>
-              <span>|</span>
-              <span class="old-price">¥23.00</span>
-            </div>
-          </li>
-          <li>
-            <img src="~@/assets/images/flashsale06.jpg" alt>
-            <a>【满59包邮不可用券】十万个知识问答(上中下百科知识旗舰馆)</a>
-            <div>
-              <span class="price">¥9.90</span>
-              <span>|</span>
-              <span class="old-price">¥58.00</span>
-            </div>
-          </li>
-          <li>
-            <img src="~@/assets/images/flashsale07.jpg" alt>
-            <a>【满59包邮不可用券】动物小说大王沈石溪(科学启蒙馆共6册)</a>
-            <div>
-              <span class="price">¥19.90</span>
-              <span>|</span>
-              <span class="old-price">¥94.80</span>
-            </div>
-          </li>
-          <li>
-            <img src="~@/assets/images/flashsale08.jpg" alt>
-            <a>思维导图完整手册(精)</a>
-            <div>
-              <span class="price">¥36.80</span>
-              <span>|</span>
-              <span class="old-price">¥58.00</span>
-            </div>
-          </li>
-          <li>
-            <img src="~@/assets/images/flashsale09.jpg" alt>
-            <a>国家宝藏</a>
-            <div>
-              <span class="price">¥53.90</span>
-              <span>|</span>
-              <span class="old-price">¥88.00</span>
-            </div>
-          </li>
-          <li>
-            <img src="~@/assets/images/flashsale10.jpg" alt>
-            <a>企鹅经典：小黑书（第二辑）</a>
-            <div>
-              <span class="price">¥88.80</span>
-              <span>|</span>
-              <span class="old-price">¥149.00</span>
-            </div>
-          </li>
-          <li>
-            <img src="~@/assets/images/flashsale11.jpg" alt>
-            <a>笨狼的故事(20年荣誉典藏纪念版)/中国幽默儿童文学创作汤素兰系列</a>
-            <div>
-              <span class="price">¥16.80</span>
-              <span>|</span>
-              <span class="old-price">¥25.00</span>
-            </div>
-          </li>
-          <li>
-            <img src="~@/assets/images/flashsale12.jpg" alt>
-            <a>百年孤独(精)</a>
-            <div>
-              <span class="price">¥35.90</span>
-              <span>|</span>
-              <span class="old-price">¥55.00</span>
+              <span class="old-price">{{ item.oldPrice }}</span>
             </div>
           </li>
         </ul>
@@ -133,15 +34,106 @@
 
 <script>
 export default {
-  name: "FlashSale"
+  name: "FlashSale",
+  data() {
+    return {
+      timeLimitList: [
+        {
+          id: "01",
+          img: require("../../../assets/images/home/flashsale01.jpg"),
+          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
+          newPrice: "￥1.90",
+          oldPrice: "￥19.80"
+        },
+        {
+          id: "02",
+          img: require("../../../assets/images/home/flashsale01.jpg"),
+          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
+          newPrice: "￥1.90",
+          oldPrice: "￥19.80"
+        },
+        {
+          id: "03",
+          img: require("../../../assets/images/home/flashsale01.jpg"),
+          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
+          newPrice: "￥1.90",
+          oldPrice: "￥19.80"
+        },
+        {
+          id: "04",
+          img: require("../../../assets/images/home/flashsale01.jpg"),
+          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
+          newPrice: "￥1.90",
+          oldPrice: "￥19.80"
+        },
+        {
+          id: "05",
+          img: require("../../../assets/images/home/flashsale01.jpg"),
+          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
+          newPrice: "￥1.90",
+          oldPrice: "￥19.80"
+        },
+        {
+          id: "06",
+          img: require("../../../assets/images/home/flashsale01.jpg"),
+          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
+          newPrice: "￥1.90",
+          oldPrice: "￥19.80"
+        },
+        {
+          id: "07",
+          img: require("../../../assets/images/home/flashsale01.jpg"),
+          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
+          newPrice: "￥1.90",
+          oldPrice: "￥19.80"
+        },
+        {
+          id: "08",
+          img: require("../../../assets/images/home/flashsale01.jpg"),
+          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
+          newPrice: "￥1.90",
+          oldPrice: "￥19.80"
+        },
+        {
+          id: "09",
+          img: require("../../../assets/images/home/flashsale01.jpg"),
+          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
+          newPrice: "￥1.90",
+          oldPrice: "￥19.80"
+        },
+        {
+          id: "10",
+          img: require("../../../assets/images/home/flashsale01.jpg"),
+          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
+          newPrice: "￥1.90",
+          oldPrice: "￥19.80"
+        },
+        {
+          id: "11",
+          img: require("../../../assets/images/home/flashsale01.jpg"),
+          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
+          newPrice: "￥1.90",
+          oldPrice: "￥19.80"
+        },
+        {
+          id: "12",
+          img: require("../../../assets/images/home/flashsale01.jpg"),
+          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
+          newPrice: "￥1.90",
+          oldPrice: "￥19.80"
+        }
+      ]
+    };
+  }
 };
 </script>
 
 <style lang="less" scoped>
-@import "~@/assets/style/main.css";
+@import "~@/assets/style/main.less";
 
-.flash-sale {
+.tonglan {
   background-color: #f0f0f0;
+  padding-bottom: 20px;
   .banxin {
     .title {
       height: 40px;
@@ -152,7 +144,7 @@ export default {
         width: 96px;
         height: 40px;
         margin: 0 20px;
-        background: url("~@/assets/images/flashsale.png") no-repeat center;
+        background: url("~@/assets/images/home/flashsale.png") no-repeat center;
         float: left;
       }
       p {

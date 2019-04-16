@@ -9,7 +9,7 @@
           <router-link to="/register">
             <span>免费注册</span>
           </router-link>
-          <img src="~@/assets/images/phone.png" alt="phone">
+          <img src="~@/assets/images/header/phone.png" alt="phone">
           <span>下载书笺APP</span>
         </div>
 

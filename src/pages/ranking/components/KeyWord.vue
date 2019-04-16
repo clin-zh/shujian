@@ -109,7 +109,7 @@ export default {
           span.icon {
             width: 50px;
             height: 50px;
-            background: url("~@/assets/images/spirit.png") no-repeat;
+            background: url("~@/assets/images/ranking/spirit.png") no-repeat;
             position: absolute;
             left: 10px;
           }

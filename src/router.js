@@ -8,6 +8,7 @@ import Ranking from "./pages/ranking/Ranking.vue";
 import Login from "./pages/login/Login.vue";
 import Register from "./pages/register/Register.vue";
 import LifeAes from "./pages/lifeaes/LifeAes.vue";
+import Lib from "./pages/libra/Lib.vue";
 
 Vue.use(Router);
 
@@ -43,5 +44,9 @@ export default new Router({
       path: "/lifeaes",
       name: "lifeaes",
       component: LifeAes
+    }, {
+      path: "/library",
+      name: "library",
+      component: Lib
     }]
 });
