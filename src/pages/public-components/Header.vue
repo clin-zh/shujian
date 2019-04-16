@@ -90,7 +90,7 @@
             <router-link to="/">
               <li>文创馆</li>
             </router-link>
-            <router-link to="/">
+            <router-link to="/lifeaes">
               <li>生活美学馆</li>
             </router-link>
           </ul>
@@ -284,7 +284,9 @@ export default {
         margin-top: -30px;
         line-height: 18px;
         font-size: 18px;
-
+        &:hover {
+          background-color: #f0f0f0;
+        }
         a {
           color: #666;
         }

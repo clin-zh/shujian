@@ -7,6 +7,7 @@ import TimeToBuy from "./pages/timetobuy/TimeToBuy.vue";
 import Ranking from "./pages/ranking/Ranking.vue";
 import Login from "./pages/login/Login.vue";
 import Register from "./pages/register/Register.vue";
+import LifeAes from "./pages/lifeaes/LifeAes.vue";
 
 Vue.use(Router);
 
@@ -38,5 +39,9 @@ export default new Router({
       path: "/register",
       name: "register",
       component: Register
+    }, {
+      path: "/lifeaes",
+      name: "lifeaes",
+      component: LifeAes
     }]
 });

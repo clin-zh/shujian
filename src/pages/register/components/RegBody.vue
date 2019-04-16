@@ -117,7 +117,7 @@ export default {
             cursor: pointer;
           }
           button.reg-btn {
-            width: 350px;
+            width: 400px;
             height: 40px;
             background-color: #2db4ea;
             color: #fff;
