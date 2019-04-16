@@ -37,7 +37,10 @@
 
     <div class="center">
       <div class="banxin">
-        <img src="~@/assets/images/logo.png" alt="logo">
+        <router-link to="/">
+          <img src="~@/assets/images/logo.png" alt="logo">
+        </router-link>
+
         <div class="search">
           <input type="text" placeholder="余华">
           <button>

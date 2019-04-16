@@ -134,7 +134,7 @@ export default {
       .login-way {
         margin-top: 20px;
         a {
-          margin-right: 20px;
+          margin-right: 18px;
           cursor: pointer;
           color: #333;
           img {
