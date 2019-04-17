@@ -54,12 +54,14 @@
           <span>林清玄</span>|
           <span>邓小平大决策</span>
         </div>
-        <div class="shopping-car">
-          <a href="#">
-            <img src="~@/assets/images/header/shopping-car.png" alt>
-            <span>购物车</span>
-          </a>
-        </div>
+        <router-link to="/shoppingcar">
+          <div class="shopping-car">
+            <a href="#">
+              <img src="~@/assets/images/header/shopping-car.png" alt>
+              <span>购物车</span>
+            </a>
+          </div>
+        </router-link>
       </div>
     </div>
 
@@ -87,7 +89,7 @@
             <router-link to="/library">
               <li>图书馆</li>
             </router-link>
-            <router-link to="/">
+            <router-link to="/stationery">
               <li>文创馆</li>
             </router-link>
             <router-link to="/lifeaes">

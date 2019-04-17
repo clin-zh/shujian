@@ -9,6 +9,8 @@ import Login from "./pages/login/Login.vue";
 import Register from "./pages/register/Register.vue";
 import LifeAes from "./pages/lifeaes/LifeAes.vue";
 import Lib from "./pages/libra/Lib.vue";
+import Stationery from "./pages/stationery/Stationery.vue";
+import ShoppingCar from "./pages/shoppingcar/ShoppingCar.vue";
 
 Vue.use(Router);
 
@@ -48,5 +50,13 @@ export default new Router({
       path: "/library",
       name: "library",
       component: Lib
+    }, {
+      path: "/stationery",
+      name: "stationery",
+      component: Stationery
+    }, {
+      path: "/shoppingcar",
+      name: "shoppingcar",
+      component: ShoppingCar
     }]
 });
