@@ -11,8 +11,9 @@ import LifeAes from "./pages/lifeaes/LifeAes.vue";
 import Lib from "./pages/libra/Lib.vue";
 import Stationery from "./pages/stationery/Stationery.vue";
 import ShoppingCar from "./pages/shoppingcar/ShoppingCar.vue";
+import Category from "./pages/category/Category.vue";
 
-Vue.use(Router);
+Vue.use(Router)
 
 export default new Router({
   mode: 'history',   // 路由地址不出现"#"
@@ -58,5 +59,9 @@ export default new Router({
       path: "/shoppingcar",
       name: "shoppingcar",
       component: ShoppingCar
+    }, {
+      path: "/category",
+      name: "category",
+      component: Category
     }]
 });

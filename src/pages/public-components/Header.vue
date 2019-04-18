@@ -67,10 +67,13 @@
 
     <div class="bottom">
       <div class="banxin">
-        <div class="all-commodity">
-          <img src="~@/assets/images/header/caidan.png" alt>
-          所有商品分类
-        </div>
+        <router-link to="/category">
+          <div class="all-commodity">
+            <img src="~@/assets/images/header/caidan.png" alt>
+            所有商品分类
+          </div>
+        </router-link>
+
         <div class="nav">
           <ul>
             <router-link to="/">
