@@ -5,20 +5,20 @@
         <p class="title">书笺用户登录</p>
         <div class="box">
           <label for="user">
-            <img src="~@/assets/images/login/user.png" alt>
+            <img src="/images/login/user.png" alt>
           </label>
           <input type="text" id="user" placeholder="请输入手机号码/用户名">
         </div>
         <div class="box">
           <label for="password">
-            <img src="~@/assets/images/login/password.png" alt>
+            <img src="/images/login/password.png" alt>
           </label>
           <input type="password" id="password" placeholder="请输入密码">
         </div>
         <p class="verification-code">
           <label for="ver-code">验证码:</label>
           <input id="ver-code" type="text">
-          <img src="~@/assets/images/login/authcode.jpg" alt>
+          <img src="/images/login/authcode.jpg" alt>
           <a href="#">换一张</a>
         </p>
         <p class="find-psw">
@@ -27,16 +27,16 @@
         <button>登录</button>
         <div class="login-way">
           <a>
-            <img src="~@/assets/images/login/qq.png" alt>QQ登录
+            <img src="/images/login/qq.png" alt>QQ登录
           </a>
           <a>
-            <img src="~@/assets/images/login/weixin.png" alt>微信登陆
+            <img src="/images/login/weixin.png" alt>微信登陆
           </a>
           <a>
-            <img src="~@/assets/images/login/zhifubao.png" alt>支付宝登陆
+            <img src="/images/login/zhifubao.png" alt>支付宝登陆
           </a>
           <a>
-            <img src="~@/assets/images/login/weibo.png" alt>微博登陆
+            <img src="/images/login/weibo.png" alt>微博登陆
           </a>
         </div>
         <div class="new-user">
@@ -56,7 +56,7 @@ export default {
 <style lang="less" scoped>
 .tonglan {
   height: 600px;
-  background: url("~@/assets/images/login/banner.jpg") no-repeat center center;
+  background: url("/images/login/banner.jpg") no-repeat center center;
   .banxin {
     height: 100%;
     .content {

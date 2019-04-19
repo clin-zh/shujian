@@ -5,7 +5,7 @@
         优选品牌
       </div>
       <ul>
-        <li v-for="item in 12" :key="item.index"><a href="JavaScript:;"><img src="~@/assets/images/stationery/chenguanglogo.jpg" alt=""></a></li>
+        <li v-for="item in 12" :key="item.index"><a href="JavaScript:;"><img src="/images/stationery/chenguanglogo.jpg" alt=""></a></li>
       </ul>
     </div>
   </div>

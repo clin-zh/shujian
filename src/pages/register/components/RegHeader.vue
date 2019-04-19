@@ -9,7 +9,7 @@
           <router-link to="/register">
             <span>免费注册</span>
           </router-link>
-          <img src="~@/assets/images/header/phone.png" alt="phone">
+          <img src="/images/header/phone.png" alt="phone">
           <span>下载书笺APP</span>
         </div>
 
@@ -37,7 +37,7 @@
     <div class="logo">
       <div class="banxin">
         <router-link to="/">
-          <img src="~@/assets/images/login/logo.png" alt>
+          <img src="/images/login/logo.png" alt>
         </router-link>
       </div>
     </div>

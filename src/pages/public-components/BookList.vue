@@ -14,11 +14,11 @@
         <ul>
           <li v-for="item in booklist" :key="item.id">
             <a href="#">
-              <img :src="item.url" alt>
+              <img :src="item.imgUrl" alt>
             </a>
             <a href="#">{{ item.name }}</a>
             <p>
-              <span class="price">{{ item.price }}</span>
+              <span class="price">{{ item.newPrice }}</span>
               <span>|</span>
               <span class="old-price">{{ item.oldPrice }}</span>
             </p>

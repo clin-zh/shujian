@@ -16,31 +16,31 @@ export default {
       imgList: [
         {
           id: "01",
-          imgUrl: require("../../../assets/images/lifeaes/shitidian.jpg")
+          imgUrl: "/images/lifeaes/shitidian.jpg"
         },
         {
           id: "02",
-          imgUrl: require("../../../assets/images/lifeaes/tuijian.jpg")
+          imgUrl: "/images/lifeaes/tuijian.jpg"
         },
         {
           id: "03",
-          imgUrl: require("../../../assets/images/lifeaes/xiangya.jpg")
+          imgUrl: "/images/lifeaes/xiangya.jpg"
         },
         {
           id: "04",
-          imgUrl: require("../../../assets/images/lifeaes/qilan.jpg")
+          imgUrl: "/images/lifeaes/qilan.jpg"
         },
         {
           id: "05",
-          imgUrl: require("../../../assets/images/lifeaes/lingyun.jpg")
+          imgUrl: "/images/lifeaes/lingyun.jpg"
         },
         {
           id: "06",
-          imgUrl: require("../../../assets/images/lifeaes/xiangyabai.jpg")
+          imgUrl: "/images/lifeaes/xiangyabai.jpg"
         },
         {
           id: "07",
-          imgUrl: require("../../../assets/images/lifeaes/bigua.jpg")
+          imgUrl: "/images/lifeaes/bigua.jpg"
         }
       ]
     };

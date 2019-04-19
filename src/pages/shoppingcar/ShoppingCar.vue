@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- 购物车页 -->
     <reg-header></reg-header>
     <shop-car-body></shop-car-body>
     <Footer></Footer>

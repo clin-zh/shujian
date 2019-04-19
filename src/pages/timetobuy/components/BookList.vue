@@ -2,16 +2,16 @@
   <div class="tonglan">
     <div class="banxin">
       <ul class="list">
-        <li v-for="item in BookList" :key="item.id">
-          <img :src="item.img" alt>
+        <li v-for="item in booklist" :key="item.id">
+          <img :src="item.imgUrl" alt>
           <p>{{ item.name }}</p>
           <div class="box">
             <div class="buy">
               <p>
-                <span class="price">{{ item.price }}</span>
+                <span class="price">{{ item.newPrice }}</span>
                 <span class="oldPrice">{{ item.oldPrice }}</span>
               </p>
-              <p>仅剩{{ item.inventory }}件</p>
+              <p>仅剩{{ item.remaining }}件</p>
             </div>
             <button>马上抢</button>
           </div>
@@ -24,107 +24,8 @@
 <script>
 export default {
   name: "BookList",
-  data() {
-    return {
-      BookList: [
-        {
-          id: "001",
-          img: require("../../../assets/images/timetobuy/dingdingdangdang.jpg"),
-          name: "丁丁当当(共7册)(精)",
-          price: "￥71.90",
-          oldPrice: "￥126.00",
-          inventory: "60"
-        },
-        {
-          id: "002",
-          img: require("../../../assets/images/timetobuy/dingdingdangdang.jpg"),
-          name: "丁丁当当(共7册)(精)",
-          price: "￥71.90",
-          oldPrice: "￥126.00",
-          inventory: "60"
-        },
-        {
-          id: "003",
-          img: require("../../../assets/images/timetobuy/dingdingdangdang.jpg"),
-          name: "丁丁当当(共7册)(精)",
-          price: "￥71.90",
-          oldPrice: "￥126.00",
-          inventory: "60"
-        },
-        {
-          id: "004",
-          img: require("../../../assets/images/timetobuy/dingdingdangdang.jpg"),
-          name: "丁丁当当(共7册)(精)",
-          price: "￥71.90",
-          oldPrice: "￥126.00",
-          inventory: "60"
-        },
-        {
-          id: "005",
-          img: require("../../../assets/images/timetobuy/dingdingdangdang.jpg"),
-          name: "丁丁当当(共7册)(精)",
-          price: "￥71.90",
-          oldPrice: "￥126.00",
-          inventory: "60"
-        },
-        {
-          id: "006",
-          img: require("../../../assets/images/timetobuy/dingdingdangdang.jpg"),
-          name: "丁丁当当(共7册)(精)",
-          price: "￥71.90",
-          oldPrice: "￥126.00",
-          inventory: "60"
-        },
-        {
-          id: "007",
-          img: require("../../../assets/images/timetobuy/dingdingdangdang.jpg"),
-          name: "丁丁当当(共7册)(精)",
-          price: "￥71.90",
-          oldPrice: "￥126.00",
-          inventory: "60"
-        },
-        {
-          id: "008",
-          img: require("../../../assets/images/timetobuy/dingdingdangdang.jpg"),
-          name: "丁丁当当(共7册)(精)",
-          price: "￥71.90",
-          oldPrice: "￥126.00",
-          inventory: "60"
-        },
-        {
-          id: "009",
-          img: require("../../../assets/images/timetobuy/dingdingdangdang.jpg"),
-          name: "丁丁当当(共7册)(精)",
-          price: "￥71.90",
-          oldPrice: "￥126.00",
-          inventory: "60"
-        },
-        {
-          id: "010",
-          img: require("../../../assets/images/timetobuy/dingdingdangdang.jpg"),
-          name: "丁丁当当(共7册)(精)",
-          price: "￥71.90",
-          oldPrice: "￥126.00",
-          inventory: "60"
-        },
-        {
-          id: "011",
-          img: require("../../../assets/images/timetobuy/dingdingdangdang.jpg"),
-          name: "丁丁当当(共7册)(精)",
-          price: "￥71.90",
-          oldPrice: "￥126.00",
-          inventory: "60"
-        },
-        {
-          id: "012",
-          img: require("../../../assets/images/timetobuy/dingdingdangdang.jpg"),
-          name: "丁丁当当(共7册)(精)",
-          price: "￥71.90",
-          oldPrice: "￥126.00",
-          inventory: "60"
-        }
-      ]
-    };
+  props: {
+    booklist: Array
   }
 };
 </script>

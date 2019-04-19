@@ -1,8 +1,24 @@
 <template>
   <div class="tonglan">
     <div class="banxin">
-      {{ cateName }}
-      {{ catePro }}
+      <p class="location">
+        <span>您当前的位置:</span>
+        <a href="JavaScript:;">书笺首页</a>
+        <span>></span>
+        <a href="JavaScript:;">全部商品分类</a>
+      </p>
+      <div class="title">{{ cateName }}</div>
+      <div class="item" v-for="item in catePro" :key="item.index">
+        <div class="left">
+          <a href="javascript:;">{{ item.item }}</a>
+        </div>
+        <ul class="right">
+          <li v-for="cate in item.list" :key="cate.index">
+            <a class="content">{{ cate }}</a>
+            <span>|</span>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -13,38 +29,78 @@
 export default {
   name: "CateBody",
   props: {
-    cateName: Array,
+    cateName: String,
     catePro: Array
-  },
-
-  watch: {
-    cateName: {
-      handler(newValue, oldValue) {
-        for (let i = 0; i < newValue.length; i++) {
-          if (oldValue[i] != newValue[i]) {
-            console.log(newValue);
-            console.log(oldValue);
-          }
-        }
-      }
-    },
-    deep: true
-  },
-  create() {
-    console.log(this.cateName);
-  },
-  beforeMount() {
-    console.log(this.cateName);
   }
+
+  // watch: {
+  //   cateName: {
+  //     handler(newValue, oldValue) {
+  //       for (let i = 0; i < newValue.length; i++) {
+  //         if (oldValue[i] != newValue[i]) {
+  //           console.log(newValue);
+  //           console.log(oldValue);
+  //         }
+  //       }
+  //     },
+  //     deep: true
+  //   }
+  // },
 };
 </script>
 
 <style lang="less" scoped>
 @import "~@/assets/style/main.less";
 .tonglan {
-  background-color: #f0f0f0;
-  height: 500px;
+  padding-bottom: 50px;
   .banxin {
+    .location {
+      line-height: 30px;
+      margin: 15px 0;
+      color: #666;
+      a {
+        margin: 0 10px;
+        color: #666;
+      }
+    }
+    .title {
+      height: 45px;
+      padding-left: 15px;
+      font-size: 20px;
+      line-height: 45px;
+      border-bottom: 2px solid #2db4ea;
+      margin-bottom: 30px;
+    }
+    .item {
+      line-height: 30px;
+      border-bottom: 1px dotted #ccc;
+      margin: 10px 0;
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .left {
+        float: left;
+        width: 15%;
+        text-align: center;
+      }
+      .right {
+        float: right;
+        width: 85%;
+        li {
+          float: left;
+          a.content {
+            margin: 0 10px;
+            cursor: pointer;
+            color: #666;
+            &:hover {
+              color: #2db4ea;
+            }
+          }
+        }
+      }
+    }
   }
 }
 </style>

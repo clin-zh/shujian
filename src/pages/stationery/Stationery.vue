@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- 文创馆页 -->
     <Header></Header>
     <sta-banner></sta-banner>
     <product-list :productTitle="newPenTitle" :productList="newPenList"></product-list>
@@ -32,7 +33,7 @@ export default {
       newPenList: [
         {
           id: "001",
-          img: require("../../assets/images/stationery/newpen.jpg"),
+          img: "/images/stationery/newpen.jpg",
           name:
             "晨光2.0自动铅笔粗芯小学生2b铅笔考试专用自动笔不易断文具用品可换笔芯活动笔自带削笔刀 自动铅笔1支（黑/2B）＋5支铅芯",
           newPrice: "￥21.80",
@@ -40,7 +41,7 @@ export default {
         },
         {
           id: "002",
-          img: require("../../assets/images/stationery/newpen.jpg"),
+          img: "/images/stationery/newpen.jpg",
           name:
             "晨光2.0自动铅笔粗芯小学生2b铅笔考试专用自动笔不易断文具用品可换笔芯活动笔自带削笔刀 自动铅笔1支（黑/2B）＋5支铅芯",
           newPrice: "￥21.80",
@@ -48,7 +49,7 @@ export default {
         },
         {
           id: "003",
-          img: require("../../assets/images/stationery/newpen.jpg"),
+          img: "/images/stationery/newpen.jpg",
           name:
             "晨光2.0自动铅笔粗芯小学生2b铅笔考试专用自动笔不易断文具用品可换笔芯活动笔自带削笔刀 自动铅笔1支（黑/2B）＋5支铅芯",
           newPrice: "￥21.80",
@@ -56,7 +57,7 @@ export default {
         },
         {
           id: "004",
-          img: require("../../assets/images/stationery/newpen.jpg"),
+          img: "/images/stationery/newpen.jpg",
           name:
             "晨光2.0自动铅笔粗芯小学生2b铅笔考试专用自动笔不易断文具用品可换笔芯活动笔自带削笔刀 自动铅笔1支（黑/2B）＋5支铅芯",
           newPrice: "￥21.80",
@@ -64,7 +65,7 @@ export default {
         },
         {
           id: "005",
-          img: require("../../assets/images/stationery/newpen.jpg"),
+          img: "/images/stationery/newpen.jpg",
           name:
             "晨光2.0自动铅笔粗芯小学生2b铅笔考试专用自动笔不易断文具用品可换笔芯活动笔自带削笔刀 自动铅笔1支（黑/2B）＋5支铅芯",
           newPrice: "￥21.80",
@@ -72,7 +73,7 @@ export default {
         },
         {
           id: "006",
-          img: require("../../assets/images/stationery/newpen.jpg"),
+          img: "/images/stationery/newpen.jpg",
           name:
             "晨光2.0自动铅笔粗芯小学生2b铅笔考试专用自动笔不易断文具用品可换笔芯活动笔自带削笔刀 自动铅笔1支（黑/2B）＋5支铅芯",
           newPrice: "￥21.80",
@@ -87,7 +88,7 @@ export default {
       pen1fList: [
         {
           id: "001",
-          img: require("../../assets/images/stationery/1f.jpg"),
+          img: "/images/stationery/1f.jpg",
           name:
             "晨光签字黑笔彩色中性笔水笔韩国小清新可爱创意萌简约复古学生用 紫色（12支）",
           newPrice: "￥22.80",
@@ -95,7 +96,7 @@ export default {
         },
         {
           id: "002",
-          img: require("../../assets/images/stationery/1f.jpg"),
+          img: "/images/stationery/1f.jpg",
           name:
             "晨光签字黑笔彩色中性笔水笔韩国小清新可爱创意萌简约复古学生用 紫色（12支）",
           newPrice: "￥22.80",
@@ -103,7 +104,7 @@ export default {
         },
         {
           id: "003",
-          img: require("../../assets/images/stationery/1f.jpg"),
+          img: "/images/stationery/1f.jpg",
           name:
             "晨光签字黑笔彩色中性笔水笔韩国小清新可爱创意萌简约复古学生用 紫色（12支）",
           newPrice: "￥22.80",
@@ -111,7 +112,7 @@ export default {
         },
         {
           id: "004",
-          img: require("../../assets/images/stationery/1f.jpg"),
+          img: "/images/stationery/1f.jpg",
           name:
             "晨光签字黑笔彩色中性笔水笔韩国小清新可爱创意萌简约复古学生用 紫色（12支）",
           newPrice: "￥22.80",
@@ -119,7 +120,7 @@ export default {
         },
         {
           id: "005",
-          img: require("../../assets/images/stationery/1f.jpg"),
+          img: "/images/stationery/1f.jpg",
           name:
             "晨光签字黑笔彩色中性笔水笔韩国小清新可爱创意萌简约复古学生用 紫色（12支）",
           newPrice: "￥22.80",
@@ -127,7 +128,7 @@ export default {
         },
         {
           id: "006",
-          img: require("../../assets/images/stationery/1f.jpg"),
+          img: "/images/stationery/1f.jpg",
           name:
             "晨光签字黑笔彩色中性笔水笔韩国小清新可爱创意萌简约复古学生用 紫色（12支）",
           newPrice: "￥22.80",
@@ -135,7 +136,7 @@ export default {
         },
         {
           id: "007",
-          img: require("../../assets/images/stationery/1f.jpg"),
+          img: "/images/stationery/1f.jpg",
           name:
             "晨光签字黑笔彩色中性笔水笔韩国小清新可爱创意萌简约复古学生用 紫色（12支）",
           newPrice: "￥22.80",
@@ -143,7 +144,7 @@ export default {
         },
         {
           id: "008",
-          img: require("../../assets/images/stationery/1f.jpg"),
+          img: "/images/stationery/1f.jpg",
           name:
             "晨光签字黑笔彩色中性笔水笔韩国小清新可爱创意萌简约复古学生用 紫色（12支）",
           newPrice: "￥22.80",
@@ -151,7 +152,7 @@ export default {
         },
         {
           id: "009",
-          img: require("../../assets/images/stationery/1f.jpg"),
+          img: "/images/stationery/1f.jpg",
           name:
             "晨光签字黑笔彩色中性笔水笔韩国小清新可爱创意萌简约复古学生用 紫色（12支）",
           newPrice: "￥22.80",
@@ -159,7 +160,7 @@ export default {
         },
         {
           id: "010",
-          img: require("../../assets/images/stationery/1f.jpg"),
+          img: "/images/stationery/1f.jpg",
           name:
             "晨光签字黑笔彩色中性笔水笔韩国小清新可爱创意萌简约复古学生用 紫色（12支）",
           newPrice: "￥22.80",
@@ -167,7 +168,7 @@ export default {
         },
         {
           id: "011",
-          img: require("../../assets/images/stationery/1f.jpg"),
+          img: "/images/stationery/1f.jpg",
           name:
             "晨光签字黑笔彩色中性笔水笔韩国小清新可爱创意萌简约复古学生用 紫色（12支）",
           newPrice: "￥22.80",
@@ -175,7 +176,7 @@ export default {
         },
         {
           id: "012",
-          img: require("../../assets/images/stationery/1f.jpg"),
+          img: "/images/stationery/1f.jpg",
           name:
             "晨光签字黑笔彩色中性笔水笔韩国小清新可爱创意萌简约复古学生用 紫色（12支）",
           newPrice: "￥22.80",
@@ -190,84 +191,84 @@ export default {
       pen2fList: [
         {
           id: "001",
-          img: require("../../assets/images/stationery/2f.jpg"),
+          img: "/images/stationery/2f.jpg",
           name: "广博箱装A4复印纸70g80g克 每包500张 5包 箱 80克印加",
           newPrice: "￥130.00",
           oldPrice: "￥180.00"
         },
         {
           id: "002",
-          img: require("../../assets/images/stationery/2f.jpg"),
+          img: "/images/stationery/2f.jpg",
           name: "广博箱装A4复印纸70g80g克 每包500张 5包 箱 80克印加",
           newPrice: "￥130.00",
           oldPrice: "￥180.00"
         },
         {
           id: "003",
-          img: require("../../assets/images/stationery/2f.jpg"),
+          img: "/images/stationery/2f.jpg",
           name: "广博箱装A4复印纸70g80g克 每包500张 5包 箱 80克印加",
           newPrice: "￥130.00",
           oldPrice: "￥180.00"
         },
         {
           id: "004",
-          img: require("../../assets/images/stationery/2f.jpg"),
+          img: "/images/stationery/2f.jpg",
           name: "广博箱装A4复印纸70g80g克 每包500张 5包 箱 80克印加",
           newPrice: "￥130.00",
           oldPrice: "￥180.00"
         },
         {
           id: "005",
-          img: require("../../assets/images/stationery/2f.jpg"),
+          img: "/images/stationery/2f.jpg",
           name: "广博箱装A4复印纸70g80g克 每包500张 5包 箱 80克印加",
           newPrice: "￥130.00",
           oldPrice: "￥180.00"
         },
         {
           id: "006",
-          img: require("../../assets/images/stationery/2f.jpg"),
+          img: "/images/stationery/2f.jpg",
           name: "广博箱装A4复印纸70g80g克 每包500张 5包 箱 80克印加",
           newPrice: "￥130.00",
           oldPrice: "￥180.00"
         },
         {
           id: "007",
-          img: require("../../assets/images/stationery/2f.jpg"),
+          img: "/images/stationery/2f.jpg",
           name: "广博箱装A4复印纸70g80g克 每包500张 5包 箱 80克印加",
           newPrice: "￥130.00",
           oldPrice: "￥180.00"
         },
         {
           id: "008",
-          img: require("../../assets/images/stationery/2f.jpg"),
+          img: "/images/stationery/2f.jpg",
           name: "广博箱装A4复印纸70g80g克 每包500张 5包 箱 80克印加",
           newPrice: "￥130.00",
           oldPrice: "￥180.00"
         },
         {
           id: "009",
-          img: require("../../assets/images/stationery/2f.jpg"),
+          img: "/images/stationery/2f.jpg",
           name: "广博箱装A4复印纸70g80g克 每包500张 5包 箱 80克印加",
           newPrice: "￥130.00",
           oldPrice: "￥180.00"
         },
         {
           id: "010",
-          img: require("../../assets/images/stationery/2f.jpg"),
+          img: "/images/stationery/2f.jpg",
           name: "广博箱装A4复印纸70g80g克 每包500张 5包 箱 80克印加",
           newPrice: "￥130.00",
           oldPrice: "￥180.00"
         },
         {
           id: "011",
-          img: require("../../assets/images/stationery/2f.jpg"),
+          img: "/images/stationery/2f.jpg",
           name: "广博箱装A4复印纸70g80g克 每包500张 5包 箱 80克印加",
           newPrice: "￥130.00",
           oldPrice: "￥180.00"
         },
         {
           id: "012",
-          img: require("../../assets/images/stationery/2f.jpg"),
+         img: "/images/stationery/2f.jpg",
           name: "广博箱装A4复印纸70g80g克 每包500张 5包 箱 80克印加",
           newPrice: "￥130.00",
           oldPrice: "￥180.00"
@@ -281,7 +282,7 @@ export default {
       pen3fList: [
         {
           id: "001",
-          img: require("../../assets/images/stationery/3f.jpg"),
+          img: "/images/stationery/3f.jpg",
           name:
             "得力儿童磁性软白板墙贴家用涂鸦 可擦写黑板贴教学小白板可裁剪自粘 50000 软黑板（0.5*450*1000mm带背胶）",
           newPrice: "￥60.00",
@@ -289,7 +290,7 @@ export default {
         },
         {
           id: "002",
-          img: require("../../assets/images/stationery/3f.jpg"),
+          img: "/images/stationery/3f.jpg",
           name:
             "得力儿童磁性软白板墙贴家用涂鸦 可擦写黑板贴教学小白板可裁剪自粘 50000 软黑板（0.5*450*1000mm带背胶）",
           newPrice: "￥60.00",
@@ -297,7 +298,7 @@ export default {
         },
         {
           id: "003",
-          img: require("../../assets/images/stationery/3f.jpg"),
+          img: "/images/stationery/3f.jpg",
           name:
             "得力儿童磁性软白板墙贴家用涂鸦 可擦写黑板贴教学小白板可裁剪自粘 50000 软黑板（0.5*450*1000mm带背胶）",
           newPrice: "￥60.00",
@@ -305,7 +306,7 @@ export default {
         },
         {
           id: "004",
-          img: require("../../assets/images/stationery/3f.jpg"),
+          img: "/images/stationery/3f.jpg",
           name:
             "得力儿童磁性软白板墙贴家用涂鸦 可擦写黑板贴教学小白板可裁剪自粘 50000 软黑板（0.5*450*1000mm带背胶）",
           newPrice: "￥60.00",
@@ -313,7 +314,7 @@ export default {
         },
         {
           id: "005",
-          img: require("../../assets/images/stationery/3f.jpg"),
+          img: "/images/stationery/3f.jpg",
           name:
             "得力儿童磁性软白板墙贴家用涂鸦 可擦写黑板贴教学小白板可裁剪自粘 50000 软黑板（0.5*450*1000mm带背胶）",
           newPrice: "￥60.00",
@@ -321,7 +322,7 @@ export default {
         },
         {
           id: "006",
-          img: require("../../assets/images/stationery/3f.jpg"),
+          img: "/images/stationery/3f.jpg",
           name:
             "得力儿童磁性软白板墙贴家用涂鸦 可擦写黑板贴教学小白板可裁剪自粘 50000 软黑板（0.5*450*1000mm带背胶）",
           newPrice: "￥60.00",
@@ -329,7 +330,7 @@ export default {
         },
         {
           id: "007",
-          img: require("../../assets/images/stationery/3f.jpg"),
+          img: "/images/stationery/3f.jpg",
           name:
             "得力儿童磁性软白板墙贴家用涂鸦 可擦写黑板贴教学小白板可裁剪自粘 50000 软黑板（0.5*450*1000mm带背胶）",
           newPrice: "￥60.00",
@@ -337,7 +338,7 @@ export default {
         },
         {
           id: "008",
-          img: require("../../assets/images/stationery/3f.jpg"),
+          img: "/images/stationery/3f.jpg",
           name:
             "得力儿童磁性软白板墙贴家用涂鸦 可擦写黑板贴教学小白板可裁剪自粘 50000 软黑板（0.5*450*1000mm带背胶）",
           newPrice: "￥60.00",
@@ -345,7 +346,7 @@ export default {
         },
         {
           id: "009",
-          img: require("../../assets/images/stationery/3f.jpg"),
+          img: "/images/stationery/3f.jpg",
           name:
             "得力儿童磁性软白板墙贴家用涂鸦 可擦写黑板贴教学小白板可裁剪自粘 50000 软黑板（0.5*450*1000mm带背胶）",
           newPrice: "￥60.00",
@@ -353,7 +354,7 @@ export default {
         },
         {
           id: "010",
-          img: require("../../assets/images/stationery/3f.jpg"),
+          img: "/images/stationery/3f.jpg",
           name:
             "得力儿童磁性软白板墙贴家用涂鸦 可擦写黑板贴教学小白板可裁剪自粘 50000 软黑板（0.5*450*1000mm带背胶）",
           newPrice: "￥60.00",
@@ -361,7 +362,7 @@ export default {
         },
         {
           id: "011",
-          img: require("../../assets/images/stationery/3f.jpg"),
+          img: "/images/stationery/3f.jpg",
           name:
             "得力儿童磁性软白板墙贴家用涂鸦 可擦写黑板贴教学小白板可裁剪自粘 50000 软黑板（0.5*450*1000mm带背胶）",
           newPrice: "￥60.00",
@@ -369,7 +370,7 @@ export default {
         },
         {
           id: "012",
-          img: require("../../assets/images/stationery/3f.jpg"),
+          img: "/images/stationery/3f.jpg",
           name:
             "得力儿童磁性软白板墙贴家用涂鸦 可擦写黑板贴教学小白板可裁剪自粘 50000 软黑板（0.5*450*1000mm带背胶）",
           newPrice: "￥60.00",
@@ -384,84 +385,84 @@ export default {
       pen4fList: [
         {
           id: "001",
-          img: require("../../assets/images/stationery/4f.jpg"),
+          img: "/images/stationery/4f.jpg",
           name: "得力A4资料册文件夹 30页（5003）",
           newPrice: "￥7.50",
           oldPrice: "￥13.30"
         },
         {
           id: "002",
-          img: require("../../assets/images/stationery/4f.jpg"),
+          img: "/images/stationery/4f.jpg",
           name: "得力A4资料册文件夹 30页（5003）",
           newPrice: "￥7.50",
           oldPrice: "￥13.30"
         },
         {
           id: "003",
-          img: require("../../assets/images/stationery/4f.jpg"),
+          img: "/images/stationery/4f.jpg",
           name: "得力A4资料册文件夹 30页（5003）",
           newPrice: "￥7.50",
           oldPrice: "￥13.30"
         },
         {
           id: "004",
-          img: require("../../assets/images/stationery/4f.jpg"),
+          img: "/images/stationery/4f.jpg",
           name: "得力A4资料册文件夹 30页（5003）",
           newPrice: "￥7.50",
           oldPrice: "￥13.30"
         },
         {
           id: "005",
-          img: require("../../assets/images/stationery/4f.jpg"),
+          img: "/images/stationery/4f.jpg",
           name: "得力A4资料册文件夹 30页（5003）",
           newPrice: "￥7.50",
           oldPrice: "￥13.30"
         },
         {
           id: "006",
-          img: require("../../assets/images/stationery/4f.jpg"),
+          img: "/images/stationery/4f.jpg",
           name: "得力A4资料册文件夹 30页（5003）",
           newPrice: "￥7.50",
           oldPrice: "￥13.30"
         },
         {
           id: "007",
-          img: require("../../assets/images/stationery/4f.jpg"),
+          img: "/images/stationery/4f.jpg",
           name: "得力A4资料册文件夹 30页（5003）",
           newPrice: "￥7.50",
           oldPrice: "￥13.30"
         },
         {
           id: "008",
-          img: require("../../assets/images/stationery/4f.jpg"),
+          img: "/images/stationery/4f.jpg",
           name: "得力A4资料册文件夹 30页（5003）",
           newPrice: "￥7.50",
           oldPrice: "￥13.30"
         },
         {
           id: "009",
-          img: require("../../assets/images/stationery/4f.jpg"),
+          img: "/images/stationery/4f.jpg",
           name: "得力A4资料册文件夹 30页（5003）",
           newPrice: "￥7.50",
           oldPrice: "￥13.30"
         },
         {
           id: "010",
-          img: require("../../assets/images/stationery/4f.jpg"),
+          img: "/images/stationery/4f.jpg",
           name: "得力A4资料册文件夹 30页（5003）",
           newPrice: "￥7.50",
           oldPrice: "￥13.30"
         },
         {
           id: "011",
-          img: require("../../assets/images/stationery/4f.jpg"),
+         img: "/images/stationery/4f.jpg",
           name: "得力A4资料册文件夹 30页（5003）",
           newPrice: "￥7.50",
           oldPrice: "￥13.30"
         },
         {
           id: "012",
-          img: require("../../assets/images/stationery/4f.jpg"),
+          img: "/images/stationery/4f.jpg",
           name: "得力A4资料册文件夹 30页（5003）",
           newPrice: "￥7.50",
           oldPrice: "￥13.30"
@@ -475,84 +476,84 @@ export default {
       pen5fList: [
         {
           id: "001",
-          img: require("../../assets/images/stationery/5f.jpg"),
+          img: "/images/stationery/5f.jpg",
           name: "得力3906A点钞机 灰色",
           newPrice: "￥628.00",
           oldPrice: "￥1196.00"
         },
         {
           id: "002",
-          img: require("../../assets/images/stationery/5f.jpg"),
+          img: "/images/stationery/5f.jpg",
           name: "得力3906A点钞机 灰色",
           newPrice: "￥628.00",
           oldPrice: "￥1196.00"
         },
         {
           id: "003",
-          img: require("../../assets/images/stationery/5f.jpg"),
+          img: "/images/stationery/5f.jpg",
           name: "得力3906A点钞机 灰色",
           newPrice: "￥628.00",
           oldPrice: "￥1196.00"
         },
         {
           id: "004",
-          img: require("../../assets/images/stationery/5f.jpg"),
+          img: "/images/stationery/5f.jpg",
           name: "得力3906A点钞机 灰色",
           newPrice: "￥628.00",
           oldPrice: "￥1196.00"
         },
         {
           id: "005",
-          img: require("../../assets/images/stationery/5f.jpg"),
+          img: "/images/stationery/5f.jpg",
           name: "得力3906A点钞机 灰色",
           newPrice: "￥628.00",
           oldPrice: "￥1196.00"
         },
         {
           id: "006",
-          img: require("../../assets/images/stationery/5f.jpg"),
+          img: "/images/stationery/5f.jpg",
           name: "得力3906A点钞机 灰色",
           newPrice: "￥628.00",
           oldPrice: "￥1196.00"
         },
         {
           id: "007",
-          img: require("../../assets/images/stationery/5f.jpg"),
+          img: "/images/stationery/5f.jpg",
           name: "得力3906A点钞机 灰色",
           newPrice: "￥628.00",
           oldPrice: "￥1196.00"
         },
         {
           id: "008",
-          img: require("../../assets/images/stationery/5f.jpg"),
+          img: "/images/stationery/5f.jpg",
           name: "得力3906A点钞机 灰色",
           newPrice: "￥628.00",
           oldPrice: "￥1196.00"
         },
         {
           id: "009",
-          img: require("../../assets/images/stationery/5f.jpg"),
+          img: "/images/stationery/5f.jpg",
           name: "得力3906A点钞机 灰色",
           newPrice: "￥628.00",
           oldPrice: "￥1196.00"
         },
         {
           id: "010",
-          img: require("../../assets/images/stationery/5f.jpg"),
+          img: "/images/stationery/5f.jpg",
           name: "得力3906A点钞机 灰色",
           newPrice: "￥628.00",
           oldPrice: "￥1196.00"
         },
         {
           id: "011",
-          img: require("../../assets/images/stationery/5f.jpg"),
+          img: "/images/stationery/5f.jpg",
           name: "得力3906A点钞机 灰色",
           newPrice: "￥628.00",
           oldPrice: "￥1196.00"
         },
         {
           id: "012",
-          img: require("../../assets/images/stationery/5f.jpg"),
+          img: "/images/stationery/5f.jpg",
           name: "得力3906A点钞机 灰色",
           newPrice: "￥628.00",
           oldPrice: "￥1196.00"
@@ -566,7 +567,7 @@ export default {
       pen6fList: [
         {
           id: "001",
-          img: require("../../assets/images/stationery/6f.jpg"),
+          img: "/images/stationery/6f.jpg",
           name:
             "联众迪士尼50支铅笔小学生HB桶装铅笔米奇儿童带橡皮头 50支带皮头（漫威）",
           newPrice: "￥22.80",
@@ -574,7 +575,7 @@ export default {
         },
         {
           id: "002",
-          img: require("../../assets/images/stationery/6f.jpg"),
+          img: "/images/stationery/6f.jpg",
           name:
             "联众迪士尼50支铅笔小学生HB桶装铅笔米奇儿童带橡皮头 50支带皮头（漫威）",
           newPrice: "￥22.80",
@@ -582,7 +583,7 @@ export default {
         },
         {
           id: "003",
-          img: require("../../assets/images/stationery/6f.jpg"),
+          img: "/images/stationery/6f.jpg",
           name:
             "联众迪士尼50支铅笔小学生HB桶装铅笔米奇儿童带橡皮头 50支带皮头（漫威）",
           newPrice: "￥22.80",
@@ -590,7 +591,7 @@ export default {
         },
         {
           id: "004",
-          img: require("../../assets/images/stationery/6f.jpg"),
+          img: "/images/stationery/6f.jpg",
           name:
             "联众迪士尼50支铅笔小学生HB桶装铅笔米奇儿童带橡皮头 50支带皮头（漫威）",
           newPrice: "￥22.80",
@@ -598,7 +599,7 @@ export default {
         },
         {
           id: "005",
-          img: require("../../assets/images/stationery/6f.jpg"),
+          img: "/images/stationery/6f.jpg",
           name:
             "联众迪士尼50支铅笔小学生HB桶装铅笔米奇儿童带橡皮头 50支带皮头（漫威）",
           newPrice: "￥22.80",
@@ -606,7 +607,7 @@ export default {
         },
         {
           id: "006",
-          img: require("../../assets/images/stationery/6f.jpg"),
+          img: "/images/stationery/6f.jpg",
           name:
             "联众迪士尼50支铅笔小学生HB桶装铅笔米奇儿童带橡皮头 50支带皮头（漫威）",
           newPrice: "￥22.80",
@@ -614,7 +615,7 @@ export default {
         },
         {
           id: "007",
-          img: require("../../assets/images/stationery/6f.jpg"),
+          img: "/images/stationery/6f.jpg",
           name:
             "联众迪士尼50支铅笔小学生HB桶装铅笔米奇儿童带橡皮头 50支带皮头（漫威）",
           newPrice: "￥22.80",
@@ -622,7 +623,7 @@ export default {
         },
         {
           id: "008",
-          img: require("../../assets/images/stationery/6f.jpg"),
+          img: "/images/stationery/6f.jpg",
           name:
             "联众迪士尼50支铅笔小学生HB桶装铅笔米奇儿童带橡皮头 50支带皮头（漫威）",
           newPrice: "￥22.80",
@@ -630,7 +631,7 @@ export default {
         },
         {
           id: "009",
-          img: require("../../assets/images/stationery/6f.jpg"),
+          img: "/images/stationery/6f.jpg",
           name:
             "联众迪士尼50支铅笔小学生HB桶装铅笔米奇儿童带橡皮头 50支带皮头（漫威）",
           newPrice: "￥22.80",
@@ -638,7 +639,7 @@ export default {
         },
         {
           id: "010",
-          img: require("../../assets/images/stationery/6f.jpg"),
+          img: "/images/stationery/6f.jpg",
           name:
             "联众迪士尼50支铅笔小学生HB桶装铅笔米奇儿童带橡皮头 50支带皮头（漫威）",
           newPrice: "￥22.80",
@@ -646,7 +647,7 @@ export default {
         },
         {
           id: "011",
-          img: require("../../assets/images/stationery/6f.jpg"),
+          img: "/images/stationery/6f.jpg",
           name:
             "联众迪士尼50支铅笔小学生HB桶装铅笔米奇儿童带橡皮头 50支带皮头（漫威）",
           newPrice: "￥22.80",
@@ -654,7 +655,7 @@ export default {
         },
         {
           id: "012",
-          img: require("../../assets/images/stationery/6f.jpg"),
+          img: "/images/stationery/6f.jpg",
           name:
             "联众迪士尼50支铅笔小学生HB桶装铅笔米奇儿童带橡皮头 50支带皮头（漫威）",
           newPrice: "￥22.80",

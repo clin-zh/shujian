@@ -1,10 +1,10 @@
 <template>
   <div class="tonglan">
     <div class="banxin">
-      <img src="~@/assets/images/stationery/banner.jpg" alt="">
-      <img src="~@/assets/images/stationery/youhuiquan3.png" alt="">
-      <img src="~@/assets/images/stationery/youhuiquan5.png" alt="">
-      <img src="~@/assets/images/stationery/youhuiquan10.png" alt="">
+      <img src="/images/stationery/banner.jpg" alt="">
+      <img src="/images/stationery/youhuiquan3.png" alt="">
+      <img src="/images/stationery/youhuiquan5.png" alt="">
+      <img src="/images/stationery/youhuiquan10.png" alt="">
     </div>
   </div>
 </template>

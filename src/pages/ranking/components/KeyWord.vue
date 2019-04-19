@@ -11,7 +11,7 @@
         </ul>
       </div>
       <div class="banner">
-        <img src="~@/assets/images/ranking/banner.jpg" alt="">
+        <img src="/images/ranking/banner.jpg" alt="">
         <ul>
           <li v-for="item in keywordList" :key="item.index">{{ item }}</li>
         </ul>
@@ -109,7 +109,7 @@ export default {
           span.icon {
             width: 50px;
             height: 50px;
-            background: url("~@/assets/images/ranking/spirit.png") no-repeat;
+            background: url("/images/ranking/spirit.png") no-repeat;
             position: absolute;
             left: 10px;
           }

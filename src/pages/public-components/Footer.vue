@@ -3,28 +3,28 @@
     <div class="tonglan">
       <div class="slogan">
         <div class="zheng">
-          <img src="~@/assets/images/footer/footer-zheng.png" alt>
+          <img src="/images/footer/footer-zheng.png" alt>
           <div class="text">
             <p class="title">全场正品</p>
             <p>出版社直采·书笺正品</p>
           </div>
         </div>
         <div class="sheng">
-          <img src="~@/assets/images/footer/footer-sheng.png" alt>
+          <img src="/images/footer/footer-sheng.png" alt>
           <div class="text">
             <p class="title">全场满59包邮</p>
             <p>惊喜不断·让利多多</p>
           </div>
         </div>
         <div class="huo">
-          <img src="~@/assets/images/footer/footer-huo.png" alt>
+          <img src="/images/footer/footer-huo.png" alt>
           <div class="text">
             <p class="title">门店自取</p>
             <p>就近取货·方式灵活</p>
           </div>
         </div>
         <div class="you">
-          <img src="~@/assets/images/footer/footer-you.png" alt>
+          <img src="/images/footer/footer-you.png" alt>
           <div class="text">
             <p class="title">售后无忧</p>
             <p>服务体验·更加精彩</p>
@@ -128,12 +128,12 @@
         <ul>
           <li>
             <p class="title">手机书笺</p>
-            <img src="~@/assets/images/footer/erweima.jpg" alt>
+            <img src="/images/footer/erweima.jpg" alt>
             <p>下载手机客户端</p>
           </li>
           <li>
             <p class="title">关注微信</p>
-            <img src="~@/assets/images/footer/erweima.jpg" alt>
+            <img src="/images/footer/erweima.jpg" alt>
             <p>关注官方微信</p>
           </li>
         </ul>

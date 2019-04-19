@@ -15,9 +15,9 @@
           <p>书笺体验店</p>
           <div class="share">
             <span>分享店铺:</span>
-            <img src="~@/assets/images/home/weibo.png" alt>
-            <img src="~@/assets/images/home/weixin.png" alt>
-            <img src="~@/assets/images/home/qq.png" alt>
+            <img src="/images/home/weibo.png" alt>
+            <img src="/images/home/weixin.png" alt>
+            <img src="/images/home/qq.png" alt>
           </div>
         </div>
         <div class="btn">一键开店</div>
@@ -47,15 +47,15 @@
       </div>
       <div class="slogan">
         <span>
-          <img src="~@/assets/images/home/zheng.png" alt="正">
+          <img src="/images/home/zheng.png" alt="正">
           正品保障
         </span>
         <span>
-          <img src="~@/assets/images/home/tui.png" alt="退">
+          <img src="/images/home/tui.png" alt="退">
           七天无理由退货
         </span>
         <span>
-          <img src="~@/assets/images/home/you.png" alt="邮">
+          <img src="/images/home/you.png" alt="邮">
           全场满59包邮
         </span>
       </div>
@@ -89,35 +89,35 @@ export default {
       slideList: [
         {
           id: "001",
-          imgUrl: require("../../../assets/images/home/slide01.jpg")
+          imgUrl: "/images/home/slide01.jpg"
         },
         {
           id: "002",
-          imgUrl: require("../../../assets/images/home/slide02.jpg")
+          imgUrl: "/images/home/slide02.jpg"
         },
         {
           id: "003",
-          imgUrl: require("../../../assets/images/home/slide03.jpg")
+          imgUrl: "/images/home/slide03.jpg"
         },
         {
           id: "004",
-          imgUrl: require("../../../assets/images/home/slide04.jpg")
+          imgUrl: "/images/home/slide04.jpg"
         },
         {
           id: "005",
-          imgUrl: require("../../../assets/images/home/slide05.jpg")
+          imgUrl: "/images/home/slide05.jpg"
         },
         {
           id: "006",
-          imgUrl: require("../../../assets/images/home/slide06.jpg")
+          imgUrl: "/images/home/slide06.jpg"
         },
         {
           id: "007",
-          imgUrl: require("../../../assets/images/home/slide07.jpg")
+          imgUrl: "/images/home/slide07.jpg"
         },
         {
           id: "008",
-          imgUrl: require("../../../assets/images/home/slide08.jpg")
+          imgUrl: "/images/home/slide08.jpg"
         }
       ],
       itemList: [
@@ -239,7 +239,7 @@ export default {
           span.icon {
             width: 50px;
             height: 50px;
-            background: url("~@/assets/images/home/spirit.png") no-repeat;
+            background: url("/images/home/spirit.png") no-repeat;
             position: absolute;
             left: 10px;
           }

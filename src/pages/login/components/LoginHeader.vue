@@ -2,7 +2,7 @@
   <div class="tonglan">
     <div class="banxin">
       <router-link to="/">
-        <img src="~@/assets/images/login/logo.png" alt>
+        <img src="/images/login/logo.png" alt>
       </router-link>
     </div>
   </div>

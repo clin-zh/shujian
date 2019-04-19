@@ -29,35 +29,35 @@ export default {
       slideList: [
         {
           id: "001",
-          imgUrl: require("../../../assets/images/libra/banner01.jpg")
+          imgUrl: "/images/libra/banner01.jpg"
         },
         {
           id: "002",
-          imgUrl: require("../../../assets/images/libra/banner01.jpg")
+          imgUrl: "/images/libra/banner01.jpg"
         },
         {
           id: "003",
-          imgUrl: require("../../../assets/images/libra/banner01.jpg")
+          imgUrl: "/images/libra/banner01.jpg"
         },
         {
           id: "004",
-          imgUrl: require("../../../assets/images/libra/banner01.jpg")
+          imgUrl: "/images/libra/banner01.jpg"
         },
         {
           id: "005",
-          imgUrl: require("../../../assets/images/libra/banner01.jpg")
+          imgUrl: "/images/libra/banner01.jpg"
         },
         {
           id: "006",
-          imgUrl: require("../../../assets/images/libra/banner01.jpg")
+          imgUrl: "/images/libra/banner01.jpg"
         },
         {
           id: "007",
-          imgUrl: require("../../../assets/images/libra/banner01.jpg")
+          imgUrl: "/images/libra/banner01.jpg"
         },
         {
           id: "008",
-          imgUrl: require("../../../assets/images/libra/banner01.jpg")
+          imgUrl: "/images/libra/banner01.jpg"
         }
       ]
     };

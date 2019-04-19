@@ -1,7 +1,7 @@
 <template>
   <div class="tonglan">
     <div class="banxin">
-      <img src="~@/assets/images/lifeaes/phone.jpg" alt>
+      <img src="/images/lifeaes/phone.jpg" alt>
     </div>
   </div>
 </template>

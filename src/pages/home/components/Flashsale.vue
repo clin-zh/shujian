@@ -11,8 +11,8 @@
       </div>
       <div class="slide-show">
         <ul>
-          <li v-for="item in timeLimitList" :key="item.id">
-            <img :src="item.img" alt>
+          <li v-for="item in booklist" :key="item.id">
+            <img :src="item.imgUrl" alt>
             <a>{{ item.name }}</a>
             <div>
               <span class="price">{{ item.newPrice }}</span>
@@ -35,95 +35,8 @@
 <script>
 export default {
   name: "FlashSale",
-  data() {
-    return {
-      timeLimitList: [
-        {
-          id: "01",
-          img: require("../../../assets/images/home/flashsale01.jpg"),
-          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
-          newPrice: "￥1.90",
-          oldPrice: "￥19.80"
-        },
-        {
-          id: "02",
-          img: require("../../../assets/images/home/flashsale01.jpg"),
-          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
-          newPrice: "￥1.90",
-          oldPrice: "￥19.80"
-        },
-        {
-          id: "03",
-          img: require("../../../assets/images/home/flashsale01.jpg"),
-          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
-          newPrice: "￥1.90",
-          oldPrice: "￥19.80"
-        },
-        {
-          id: "04",
-          img: require("../../../assets/images/home/flashsale01.jpg"),
-          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
-          newPrice: "￥1.90",
-          oldPrice: "￥19.80"
-        },
-        {
-          id: "05",
-          img: require("../../../assets/images/home/flashsale01.jpg"),
-          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
-          newPrice: "￥1.90",
-          oldPrice: "￥19.80"
-        },
-        {
-          id: "06",
-          img: require("../../../assets/images/home/flashsale01.jpg"),
-          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
-          newPrice: "￥1.90",
-          oldPrice: "￥19.80"
-        },
-        {
-          id: "07",
-          img: require("../../../assets/images/home/flashsale01.jpg"),
-          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
-          newPrice: "￥1.90",
-          oldPrice: "￥19.80"
-        },
-        {
-          id: "08",
-          img: require("../../../assets/images/home/flashsale01.jpg"),
-          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
-          newPrice: "￥1.90",
-          oldPrice: "￥19.80"
-        },
-        {
-          id: "09",
-          img: require("../../../assets/images/home/flashsale01.jpg"),
-          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
-          newPrice: "￥1.90",
-          oldPrice: "￥19.80"
-        },
-        {
-          id: "10",
-          img: require("../../../assets/images/home/flashsale01.jpg"),
-          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
-          newPrice: "￥1.90",
-          oldPrice: "￥19.80"
-        },
-        {
-          id: "11",
-          img: require("../../../assets/images/home/flashsale01.jpg"),
-          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
-          newPrice: "￥1.90",
-          oldPrice: "￥19.80"
-        },
-        {
-          id: "12",
-          img: require("../../../assets/images/home/flashsale01.jpg"),
-          name: "【满59包邮不可用券】吓你一跳的植物真相/真的好奇怪",
-          newPrice: "￥1.90",
-          oldPrice: "￥19.80"
-        }
-      ]
-    };
+  props: {
+    booklist: Array
   }
 };
 </script>
@@ -144,7 +57,7 @@ export default {
         width: 96px;
         height: 40px;
         margin: 0 20px;
-        background: url("~@/assets/images/home/flashsale.png") no-repeat center;
+        background: url("/images/home/flashsale.png") no-repeat center;
         float: left;
       }
       p {
@@ -161,10 +74,11 @@ export default {
       position: relative;
       ul {
         li {
-          width: 160px;
+          width: 156px;
           height: 230px;
           float: left;
           padding: 20px;
+          margin: 0 2px;
           background-color: #fff;
           text-align: center;
           position: relative;
@@ -224,13 +138,13 @@ export default {
         }
       }
       .btn-left {
-        left: 0;
+        left: 2px;
         span {
           transform: rotate(135deg);
         }
       }
       .btn-right {
-        right: 0;
+        right: 2px;
         span {
           transform: rotate(-45deg);
         }

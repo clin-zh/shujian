@@ -1,11 +1,11 @@
 <template>
   <div class="center">
     <div class="banxin">
-      <img src="~@/assets/images/header/logo.png" alt="logo">
+      <img src="/images/header/logo.png" alt="logo">
       <div class="search">
         <input type="text" placeholder="余华">
         <button>
-          <img src="~@/assets/images/header/fangdajing.png" alt>
+          <img src="/images/header/fangdajing.png" alt>
         </button>
       </div>
       <div class="keyword">
@@ -17,7 +17,7 @@
       </div>
       <div class="shopping-car">
         <a href="#">
-          <img src="~@/assets/images/header/shopping-car.png" alt>
+          <img src="/images/header/shopping-car.png" alt>
           <span>购物车</span>
         </a>
       </div>

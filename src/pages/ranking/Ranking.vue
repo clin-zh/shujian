@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- 排行榜页 -->
     <Header></Header>
     <key-Word></key-Word>
     <Paging></Paging>

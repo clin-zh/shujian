@@ -6,7 +6,7 @@
         <p class="title-right">温馨提示:1.购物车中的商品无法保留库存，请您尽快完成购买。2.商品的价格和库存将以订单提交时为准哦。</p>
       </div>
       <div class="car">
-        <img src="~@/assets/images/shoppingcar/shopcar.png" alt>
+        <img src="/images/shoppingcar/shopcar.png" alt>
         <p>购物车还是空滴</p>
         <router-link to="/login">
           <button class="login">登陆</button>

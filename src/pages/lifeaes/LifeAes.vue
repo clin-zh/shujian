@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- 生活美学馆页 -->
     <Header></Header>
     <Recom></Recom>
     <Product :prod="tea"></Product>
@@ -28,56 +29,56 @@ export default {
         product: [
           {
             id: "01",
-            img: require("../../assets/images/lifeaes/hongcha.jpg"),
+            img: "/images/lifeaes/hongcha.jpg",
             name: "2018年'年话'茶礼 红茶",
             newPrice: "￥186.00",
             oldPrice: "￥308.00"
           },
           {
             id: "02",
-            img: require("../../assets/images/lifeaes/hongcha.jpg"),
+            img: "/images/lifeaes/hongcha.jpg",
             name: "2018年'年话'茶礼 红茶",
             newPrice: "￥186.00",
             oldPrice: "￥308.00"
           },
           {
             id: "03",
-            img: require("../../assets/images/lifeaes/hongcha.jpg"),
+            img: "/images/lifeaes/hongcha.jpg",
             name: "2018年'年话'茶礼 红茶",
             newPrice: "￥186.00",
             oldPrice: "￥308.00"
           },
           {
             id: "04",
-            img: require("../../assets/images/lifeaes/hongcha.jpg"),
+            img: "/images/lifeaes/hongcha.jpg",
             name: "2018年'年话'茶礼 红茶",
             newPrice: "￥186.00",
             oldPrice: "￥308.00"
           },
           {
             id: "05",
-            img: require("../../assets/images/lifeaes/hongcha.jpg"),
+            img: "/images/lifeaes/hongcha.jpg",
             name: "2018年'年话'茶礼 红茶",
             newPrice: "￥186.00",
             oldPrice: "￥308.00"
           },
           {
             id: "06",
-            img: require("../../assets/images/lifeaes/hongcha.jpg"),
+            img: "/images/lifeaes/hongcha.jpg",
             name: "2018年'年话'茶礼 红茶",
             newPrice: "￥186.00",
             oldPrice: "￥308.00"
           },
           {
             id: "07",
-            img: require("../../assets/images/lifeaes/hongcha.jpg"),
+            img: "/images/lifeaes/hongcha.jpg",
             name: "2018年'年话'茶礼 红茶",
             newPrice: "￥186.00",
             oldPrice: "￥308.00"
           },
           {
             id: "08",
-            img: require("../../assets/images/lifeaes/hongcha.jpg"),
+            img: "/images/lifeaes/hongcha.jpg",
             name: "2018年'年话'茶礼 红茶",
             newPrice: "￥186.00",
             oldPrice: "￥308.00"
@@ -90,56 +91,56 @@ export default {
         product: [
           {
             id: "01",
-            img: require("../../assets/images/lifeaes/xiang.jpg"),
+            img: "/images/lifeaes/xiang.jpg",
             name: "云起香插 酸枝黄铜",
             newPrice: "￥238.00",
             oldPrice: "￥326.00"
           },
           {
             id: "02",
-            img: require("../../assets/images/lifeaes/xiang.jpg"),
+            img: "/images/lifeaes/xiang.jpg",
             name: "云起香插 酸枝黄铜",
             newPrice: "￥238.00",
             oldPrice: "￥326.00"
           },
           {
             id: "03",
-            img: require("../../assets/images/lifeaes/xiang.jpg"),
+            img: "/images/lifeaes/xiang.jpg",
             name: "云起香插 酸枝黄铜",
             newPrice: "￥238.00",
             oldPrice: "￥326.00"
           },
           {
             id: "04",
-            img: require("../../assets/images/lifeaes/xiang.jpg"),
+            img: "/images/lifeaes/xiang.jpg",
             name: "云起香插 酸枝黄铜",
             newPrice: "￥238.00",
             oldPrice: "￥326.00"
           },
           {
             id: "05",
-            img: require("../../assets/images/lifeaes/xiang.jpg"),
+            img: "/images/lifeaes/xiang.jpg",
             name: "云起香插 酸枝黄铜",
             newPrice: "￥238.00",
             oldPrice: "￥326.00"
           },
           {
             id: "06",
-            img: require("../../assets/images/lifeaes/xiang.jpg"),
+            img: "/images/lifeaes/xiang.jpg",
             name: "云起香插 酸枝黄铜",
             newPrice: "￥238.00",
             oldPrice: "￥326.00"
           },
           {
             id: "07",
-            img: require("../../assets/images/lifeaes/xiang.jpg"),
+            img: "/images/lifeaes/xiang.jpg",
             name: "云起香插 酸枝黄铜",
             newPrice: "￥238.00",
             oldPrice: "￥326.00"
           },
           {
             id: "08",
-            img: require("../../assets/images/lifeaes/xiang.jpg"),
+            img: "/images/lifeaes/xiang.jpg",
             name: "云起香插 酸枝黄铜",
             newPrice: "￥238.00",
             oldPrice: "￥326.00"
@@ -152,56 +153,56 @@ export default {
         product: [
           {
             id: "01",
-            img: require("../../assets/images/lifeaes/shua.jpg"),
+            img: "/images/lifeaes/shua.jpg",
             name: "安吉竹制 紫竹根茶道 二君子",
             newPrice: "￥36.00",
             oldPrice: "￥66.00"
           },
           {
             id: "02",
-            img: require("../../assets/images/lifeaes/shua.jpg"),
+            img: "/images/lifeaes/shua.jpg",
             name: "安吉竹制 紫竹根茶道 二君子",
             newPrice: "￥36.00",
             oldPrice: "￥66.00"
           },
           {
             id: "03",
-            img: require("../../assets/images/lifeaes/shua.jpg"),
+            img: "/images/lifeaes/shua.jpg",
             name: "安吉竹制 紫竹根茶道 二君子",
             newPrice: "￥36.00",
             oldPrice: "￥66.00"
           },
           {
             id: "04",
-           img: require("../../assets/images/lifeaes/shua.jpg"),
+            img: "/images/lifeaes/shua.jpg",
             name: "安吉竹制 紫竹根茶道 二君子",
             newPrice: "￥36.00",
             oldPrice: "￥66.00"
           },
           {
             id: "05",
-           img: require("../../assets/images/lifeaes/shua.jpg"),
+            img: "/images/lifeaes/shua.jpg",
             name: "安吉竹制 紫竹根茶道 二君子",
             newPrice: "￥36.00",
             oldPrice: "￥66.00"
           },
           {
             id: "06",
-            img: require("../../assets/images/lifeaes/shua.jpg"),
+            img: "/images/lifeaes/shua.jpg",
             name: "安吉竹制 紫竹根茶道 二君子",
             newPrice: "￥36.00",
             oldPrice: "￥66.00"
           },
           {
             id: "07",
-            img: require("../../assets/images/lifeaes/shua.jpg"),
+            img: "/images/lifeaes/shua.jpg",
             name: "安吉竹制 紫竹根茶道 二君子",
             newPrice: "￥36.00",
             oldPrice: "￥66.00"
           },
           {
             id: "08",
-            img: require("../../assets/images/lifeaes/shua.jpg"),
+            img: "/images/lifeaes/shua.jpg",
             name: "安吉竹制 紫竹根茶道 二君子",
             newPrice: "￥36.00",
             oldPrice: "￥66.00"

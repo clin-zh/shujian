@@ -1,7 +1,11 @@
 <template>
   <div>
+    <!-- 全部商品分类页 -->
     <Header></Header>
-    <cate-body :cateName="cateName" :catePro="catePro"></cate-body>
+    <cate-body :cateName="cateName[0]" :catePro="catePro[0]"></cate-body>
+    <cate-body :cateName="cateName[1]" :catePro="catePro[1]"></cate-body>
+    <cate-body :cateName="cateName[2]" :catePro="catePro[2]"></cate-body>
+    <cate-body :cateName="cateName[3]" :catePro="catePro[3]"></cate-body>
     <Footer></Footer>
   </div>
 </template>
@@ -18,14 +22,27 @@ export default {
   data() {
     return {
       data: {},
-      cateName: ["123"],
-      catePro: ["456 "]
+      cateName: [],
+      catePro: []
     };
   },
   components: {
     Header,
     Footer,
     CateBody
+  },
+  watch: {
+    cateName: {
+      handler(newValue, oldValue) {
+        for (let i = 0; i < newValue.length; i++) {
+          if (oldValue[i] != newValue[i]) {
+            console.log(newValue);
+            console.log(oldValue);
+          }
+        }
+      },
+      deep: true
+    }
   },
   methods: {
     getCateInfo() {
@@ -34,8 +51,8 @@ export default {
     handleCateInfo(res) {
       const data = res.data;
       for (var i = 0; i < data.length; i++) {
-        this.cateName[i] = data[i].name;
-        this.catePro[i] = data[i].product;
+        this.cateName.push(data[i].name);
+        this.catePro.push(data[i].product);
       }
     }
   },

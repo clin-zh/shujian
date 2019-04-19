@@ -2,7 +2,7 @@
   <div class="tonglan">
     <div class="banxin">
       <div class="img">
-        <img src="~@/assets/images/timetobuy/banner_xsqg.jpg" alt>
+        <img src="/images/timetobuy/banner_xsqg.jpg" alt>
       </div>
       <ul class="time">
         <li v-for="item in timeList" :key="item.id">
@@ -95,7 +95,7 @@ export default {
           .icon {
             width: 20px;
             height: 20px;
-            background: url("~@/assets/images/timetobuy/time.png") no-repeat;
+            background: url("/images/timetobuy/time.png") no-repeat;
             position: absolute;
             top: 7px;
             left: 15px;

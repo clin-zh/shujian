@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- 登陆页 -->
     <login-header></login-header>
     <login-body></login-body>
     <Footer></Footer>

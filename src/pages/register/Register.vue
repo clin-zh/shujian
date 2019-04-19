@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- 注册页 -->
     <reg-header></reg-header>
     <reg-body></reg-body>
   </div>

@@ -14,7 +14,7 @@
         <li>
           <label for="gra-ver-code">图形验证码:</label>
           <input type="text" id="gra-ver-code" placeholder="请输入图形验证码">
-          <img src="~@/assets/images/register/authcode.jpg" alt="">
+          <img src="/images/register/authcode.jpg" alt="">
           <a href="#">看不清,换一张</a>
         </li>
         <li>
