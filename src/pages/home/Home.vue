@@ -1,7 +1,8 @@
 <template>
   <div>
     <!-- 首页 -->
-    <Header></Header>
+    <Header :control="true"></Header>
+    <Top v-show="isShow"></Top>
     <slide-show></slide-show>
     <flash-sale :booklist="booklist"></flash-sale>
     <Footer></Footer>
@@ -21,8 +22,9 @@ export default {
   name: "Home",
   data() {
     return {
-      booklist:[]
-    }
+      booklist: [],
+      isShow: false
+    };
   },
   components: {
     Header,
@@ -33,18 +35,26 @@ export default {
   },
   methods: {
     getData() {
-      axios.get("/mock/book.json").then(this.handleData)
+      axios.get("/mock/book.json").then(this.handleData);
     },
     handleData(res) {
       const data = res.data;
       this.booklist = data[1].list;
+    },
+    handleScroll() {
+      let scrollTop =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
+      scrollTop > 222 ? (this.isShow = true) : (this.isShow = false);
     }
   },
-  mounted () {
+  mounted() {
     this.getData();
+    window.addEventListener("scroll", this.handleScroll); // 滚动监听
   }
 };
 </script>
 
-<style></style>
+<style lang="less" scoped></style>
 

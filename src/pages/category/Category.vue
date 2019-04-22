@@ -2,6 +2,8 @@
   <div>
     <!-- 全部商品分类页 -->
     <Header></Header>
+    <Top v-show="isShow"></Top>
+    <Location></Location>
     <cate-body :cateName="cateName[0]" :catePro="catePro[0]"></cate-body>
     <cate-body :cateName="cateName[1]" :catePro="catePro[1]"></cate-body>
     <cate-body :cateName="cateName[2]" :catePro="catePro[2]"></cate-body>
@@ -13,7 +15,9 @@
 <script>
 import Header from "../public-components/Header";
 import Footer from "../public-components/Footer";
+import Top from "../public-components/Top";
 import CateBody from "./components/CateBody";
+import Location from "./components/Location";
 import axios from "axios";
 // import { constants } from 'crypto';
 
@@ -21,7 +25,7 @@ export default {
   name: "Category",
   data() {
     return {
-      data: {},
+      isShow: false,
       cateName: [],
       catePro: []
     };
@@ -29,7 +33,9 @@ export default {
   components: {
     Header,
     Footer,
-    CateBody
+    CateBody,
+    Top,
+    Location
   },
   watch: {
     cateName: {
@@ -54,10 +60,18 @@ export default {
         this.cateName.push(data[i].name);
         this.catePro.push(data[i].product);
       }
+    },
+    handleScroll() {
+      let scrollTop =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
+      scrollTop > 222 ? (this.isShow = true) : (this.isShow = false);
     }
   },
   mounted() {
     this.getCateInfo();
+    window.addEventListener("scroll", this.handleScroll); // 滚动监听
   }
 };
 </script>

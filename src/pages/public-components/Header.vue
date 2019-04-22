@@ -3,10 +3,10 @@
     <div class="top">
       <div class="banxin">
         <div class="header-left">
-          <router-link to="/login">
+          <router-link to="/login" tag="a" target="_blank">
             <span>登陆</span>
           </router-link>|
-          <router-link to="/register">
+          <router-link to="/register" tag="a" target="_blank">
             <span>免费注册</span>
           </router-link>
           <img src="/images/header/phone.png" alt="phone">
@@ -14,7 +14,7 @@
         </div>
 
         <ul class="header-right">
-          <li class="icon" @mouseenter="show" @mouseleave="hidden">
+          <li class="icon" @mouseenter="ifshow = true" @mouseleave="ifshow = false">
             我的书笺
             <i></i>
             <ol class="item" v-show="ifshow">
@@ -54,12 +54,10 @@
           <span>林清玄</span>|
           <span>邓小平大决策</span>
         </div>
-        <router-link to="/shoppingcar">
+        <router-link to="/shoppingcar" tag="a" target="_blank">
           <div class="shopping-car">
-            <a href="#">
-              <img src="/images/header/shopping-car.png" alt>
-              <span>购物车</span>
-            </a>
+            <img src="/images/header/shopping-car.png" alt>
+            <span>购物车</span>
           </div>
         </router-link>
       </div>
@@ -67,35 +65,63 @@
 
     <div class="bottom">
       <div class="banxin">
-        <router-link to="/category">
-          <div class="all-commodity">
+        <router-link to="/category" tag="a" target="_blank">
+          <div class="all-commodity" @mouseenter="navShow = true" @mouseleave="navShow = false">
             <img src="/images/header/caidan.png" alt>
             所有商品分类
+            <div class="list" v-show="control||navShow">
+              <ul>
+                <li
+                  v-for="item in data"
+                  :key="item.id"
+                  @mouseenter="listShow"
+                  @mouseleave="listHidden"
+                >
+                  <span class="icon"></span>
+                  {{ item.item }}
+                  <span class="arrow"></span>
+                </li>
+
+                <div class="nav-list">
+                  <p class="hot">
+                    <!-- <span>{{ hot }}</span> -->
+                    <!-- <span>村上春树</span> -->
+                  </p>
+                  <div class="row">
+                    <div class="left">诗歌散文</div>
+                    <div class="right">
+                      <span>中国古诗词</span>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
           </div>
         </router-link>
 
+
         <div class="nav">
           <ul>
-            <router-link to="/">
+            <router-link to="/" tag="a" target="_blank">
               <li>首页</li>
             </router-link>
-            <router-link to="/newbook">
+            <router-link to="/newbook" tag="a" target="_blank">
               <li>新品</li>
             </router-link>
-            <router-link to="/timetobuy">
+            <router-link to="/timetobuy" tag="a" target="_blank">
               <li>限时购</li>
             </router-link>
-            <router-link to="/ranking">
+            <router-link to="/ranking" tag="a" target="_blank">
               <li>排行榜</li>
             </router-link>
             <span>|</span>
-            <router-link to="/library">
+            <router-link to="/library" tag="a" target="_blank">
               <li>图书馆</li>
             </router-link>
-            <router-link to="/stationery">
+            <router-link to="/stationery" tag="a" target="_blank">
               <li>文创馆</li>
             </router-link>
-            <router-link to="/lifeaes">
+            <router-link to="/lifeaes" tag="a" target="_blank">
               <li>生活美学馆</li>
             </router-link>
           </ul>
@@ -106,26 +132,89 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   name: "Header",
+  props: {
+    control: Boolean
+  },
   data() {
     return {
-      ifshow: false
+      isCollapse: true,
+      data: [],
+      activeNav: {},
+      ifshow: false,
+      navShow: false,
+      itemList: [
+        {
+          id: "01",
+          name: "文学艺术",
+          style: "icon icon1"
+        },
+        {
+          id: "02",
+          name: "少儿童书",
+          style: "icon icon2"
+        },
+        {
+          id: "03",
+          name: "人文社科",
+          style: "icon icon3"
+        },
+        {
+          id: "04",
+          name: "经管励志",
+          style: "icon icon4"
+        },
+        {
+          id: "05",
+          name: "生活时尚",
+          style: "icon icon5"
+        },
+        {
+          id: "06",
+          name: "科技教育",
+          style: "icon icon6"
+        },
+        {
+          id: "07",
+          name: "创意文具",
+          style: "icon icon7"
+        },
+        {
+          id: "08",
+          name: "生活美学",
+          style: "icon icon8"
+        },
+        {
+          id: "09",
+          name: "影音原版",
+          style: "icon icon9"
+        }
+      ]
     };
   },
   methods: {
-    show() {
-      this.ifshow = true;
+    listShow() {
+
     },
-    hidden() {
-      this.ifshow = false;
+    listHidden() {},
+    getData() {
+      axios.get("/mock/headlist.json").then(this.handleData);
+    },
+    handleData(res) {
+      this.data = res.data;
     }
+  },
+  mounted() {
+    this.getData();
   }
 };
 </script>
 
 <style lang="less" scoped>
-@import "~@/assets/style/main.less";
+@import "~@/assets/style/main.css";
+@import "~@/assets/style/element.css";
 
 .header {
   height: 220px;
@@ -276,30 +365,32 @@ export default {
           font-size: 12px;
         }
       }
-      .shopping-car {
-        width: 108px;
-        height: 18px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 10px;
-        cursor: pointer;
-        position: absolute;
-        right: 0;
-        top: 50%;
-        margin-top: -30px;
-        line-height: 18px;
-        font-size: 18px;
-        &:hover {
-          background-color: #f0f0f0;
-        }
-        a {
-          color: #666;
-        }
-        img {
-          width: 20px;
-          height: 20px;
-          vertical-align: center;
-          margin-right: 15px;
+      a {
+        color: #666;
+        .shopping-car {
+          width: 108px;
+          height: 18px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          padding: 10px;
+          cursor: pointer;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          margin-top: -30px;
+          line-height: 18px;
+          font-size: 18px;
+          &:hover {
+            background-color: #f0f0f0;
+          }
+          a {
+          }
+          img {
+            width: 20px;
+            height: 20px;
+            vertical-align: center;
+            margin-right: 15px;
+          }
         }
       }
     }
@@ -326,6 +417,128 @@ export default {
           height: 16px;
           margin-right: 5px;
         }
+
+        .list {
+          position: absolute;
+          top: 42px;
+          z-index: 999;
+          width: 200px;
+          height: 400px;
+          background-color: rgba(76, 76, 76, 0.8);
+
+          ul {
+            li {
+              width: 100%;
+              height: 40px;
+              cursor: pointer;
+              text-align: center;
+              line-height: 40px;
+              color: #fff;
+              position: relative;
+
+              &:hover {
+                background-color: #fff;
+                color: #333;
+                span.icon {
+                  background: url("/images/home/spirit.png") no-repeat -50px 0;
+                }
+                span.arrow {
+                  border-right: 2px solid #333;
+                  border-bottom: 2px solid #333;
+                }
+              }
+
+              span.icon {
+                width: 50px;
+                height: 50px;
+                background: url("/images/home/spirit.png") no-repeat;
+                position: absolute;
+                left: 10px;
+              }
+              span.icon1 {
+                background-position: 0 0;
+              }
+              span.icon2 {
+                background-position: 0 -50px;
+              }
+              span.icon3 {
+                background-position: 0 -100px;
+              }
+              span.icon4 {
+                background-position: 0 -150px;
+              }
+              span.icon5 {
+                background-position: 0 -200px;
+              }
+              span.icon6 {
+                background-position: 0 -250px;
+              }
+              span.icon7 {
+                background-position: 0 -300px;
+              }
+              span.icon8 {
+                background-position: 0 -350px;
+              }
+              span.icon9 {
+                background-position: 0 -400px;
+              }
+              span.arrow {
+                width: 8px;
+                height: 8px;
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+                position: absolute;
+                top: 50%;
+                margin-top: -4px;
+                right: 30px;
+                transform: rotate(-45deg);
+              }
+            }
+            .nav-list {
+              width: 800px;
+              height: 500px;
+              // background-color: #ccc;
+              border: 1px solid #000;
+              padding: 10px;
+              position: absolute;
+              left: 200px;
+              top: 0;
+              display: none;
+              .hot {
+                text-align: left;
+                span {
+                  background-color: #2db4ea;
+                  margin: 2px;
+                  padding: 4px;
+                }
+              }
+              .row {
+                color: #333;
+                line-height: 30px;
+                border-top: 1px solid #ccc;
+                .left {
+                  float: left;
+                  width: 20%;
+                  font-weight: bold;
+                }
+                .right {
+                  float: left;
+                  width: 80%;
+                  text-align: left;
+                  span {
+                    margin: 0 4px;
+                    display: inline-block;
+                  }
+                }
+                &::after {
+                  content: "";
+                  display: block;
+                  clear: both;
+                }
+              }
+            }
+          }
+        }
       }
       .nav {
         position: absolute;
@@ -335,6 +548,12 @@ export default {
         height: 40px;
 
         ul {
+          // 设置被选中导航栏的样式
+          .router-link-exact-active {
+            li {
+              color: #2db4ea;
+            }
+          }
           li {
             height: 100%;
             margin: 0 14px;

@@ -1,26 +1,23 @@
 <template>
-  <div class="center">
+  <div class="tonglan">
     <div class="banxin">
-      <img src="/images/header/logo.png" alt="logo">
+      <router-link to="/">
+        <img src="/images/header/logo.png" alt="logo">
+      </router-link>
+
       <div class="search">
         <input type="text" placeholder="余华">
         <button>
           <img src="/images/header/fangdajing.png" alt>
         </button>
       </div>
-      <div class="keyword">
-        <span class="active">茅台酒收藏</span>|
-        <span>夏摩山谷</span>|
-        <span>崔永元 有话说</span>|
-        <span>林清玄</span>|
-        <span>邓小平大决策</span>
-      </div>
-      <div class="shopping-car">
-        <a href="#">
+
+      <router-link to="/shoppingcar" tag="a" target="_blank">
+        <div class="shopping-car">
           <img src="/images/header/shopping-car.png" alt>
           <span>购物车</span>
-        </a>
-      </div>
+        </div>
+      </router-link>
     </div>
   </div>
 </template>
@@ -33,33 +30,38 @@ export default {
 
 <style lang="less" scoped>
 @import "~@/assets/style/main.less";
-.center {
-  height: 90px;
-  padding-top: 30px;
+.tonglan {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 2px solid #2db4ea;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
 
   .banxin {
     position: relative;
 
     img {
-      width: 200px;
-      height: 90px;
+      height: 50px;
       cursor: pointer;
     }
     .search {
       width: 546px;
-      height: 35px;
+      height: 36px;
       border: 2px solid #2db4ea;
       position: absolute;
       left: 50%;
       margin-left: -275px;
       top: 50%;
-      margin-top: -30px;
+      margin-top: -20px;
 
       input {
         width: 458px;
-        height: 35px;
+        height: 36px;
         padding: 0 10px;
         font-size: 18px;
+        float: left;
       }
       input::placeholder {
         font-size: 18px;
@@ -67,9 +69,10 @@ export default {
       }
       button {
         width: 68px;
-        height: 35px;
+        height: 36px;
         background-color: #2db4ea;
         cursor: pointer;
+        float: right;
 
         img {
           width: 30px;
@@ -77,46 +80,27 @@ export default {
         }
       }
     }
-    .keyword {
-      width: 550px;
-      height: 25px;
-      position: absolute;
-      left: 50%;
-      margin-left: -275px;
-      top: 54px;
-
-      span.active {
-        margin-left: 0px;
-        color: #e4393c;
-      }
-      span {
-        margin: 0 5px;
+    a {
+      color: #666;
+      .shopping-car {
+        width: 108px;
+        height: 18px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
         cursor: pointer;
-        font-size: 12px;
-      }
-    }
-    .shopping-car {
-      width: 108px;
-      height: 18px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: 10px;
-      cursor: pointer;
-      position: absolute;
-      right: 0;
-      top: 50%;
-      margin-top: -30px;
-      line-height: 18px;
-      font-size: 18px;
-
-      a {
-        color: #666;
-      }
-      img {
-        width: 20px;
-        height: 20px;
-        vertical-align: center;
-        margin-right: 15px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -20px;
+        line-height: 18px;
+        font-size: 18px;
+        img {
+          width: 20px;
+          height: 20px;
+          vertical-align: center;
+          margin-right: 15px;
+        }
       }
     }
   }

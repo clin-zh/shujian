@@ -1,0 +1,111 @@
+.el-carousel {
+  width: 1920px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -960px;
+}
+.el-carousel .el-carousel__container {
+  position: relative;
+}
+.el-carousel .el-carousel__container .el-carousel__arrow {
+  width: 36px;
+  height: 74px;
+  background-color: rgba(45, 180, 234, 0.5);
+  border-radius: 5px;
+}
+.el-carousel .el-carousel__container .el-carousel__arrow--left {
+  left: 560px;
+}
+.el-carousel .el-carousel__container .el-carousel__arrow--right {
+  right: 560px;
+}
+.el-carousel .el-carousel__indicators .el-carousel__button {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+  width: 200px;
+  min-height: 400px;
+}
+.el-menu--collapse {
+  width: 200px !important;
+}
+.el-menu-vertical-demo {
+  height: 40px;
+}
+.el-menu-vertical-demo .el-submenu {
+  width: 200px;
+  background-color: rgba(76, 76, 76, 0.8);
+}
+.el-menu-vertical-demo .el-submenu .el-submenu__title {
+  height: 40px;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  position: relative;
+}
+.el-menu-vertical-demo .el-submenu .el-submenu__title:hover {
+  color: #333;
+  background-color: #fff;
+}
+.el-menu-vertical-demo .el-submenu .el-submenu__title span.icon {
+  width: 50px;
+  height: 50px;
+  background: url("/images/home/spirit.png") no-repeat;
+  position: absolute;
+  left: 10px;
+}
+.el-menu-vertical-demo .el-submenu .el-submenu__title span.arrow {
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -4px;
+  right: 30px;
+  transform: rotate(-45deg);
+}
+.content {
+  width: 800px;
+  padding: 10px;
+  font-size: 12px;
+}
+.content li {
+  line-height: 26px;
+  border-bottom: 1px solid #ccc;
+}
+.content li::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.content li span.hot {
+  background-color: #2db4ea;
+  color: #fff;
+  margin: 5px;
+  padding: 2px;
+  display: inline-block;
+}
+.content li .left {
+  float: left;
+  width: 150px;
+  height: 100%;
+  font-weight: bold;
+  text-align: center;
+}
+.content li .right {
+  float: left;
+  height: 100%;
+}
+.content li .right span {
+  margin: 0 4px;
+  display: inline-block;
+  cursor: pointer;
+}
+.content li .right span:hover {
+  color: #2db4ea;
+}

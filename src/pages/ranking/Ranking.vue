@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- 排行榜页 -->
-    <Header></Header>
+    <Header :control="true"></Header>
     <key-Word></key-Word>
     <Paging></Paging>
     <Footer></Footer>

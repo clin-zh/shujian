@@ -144,7 +144,7 @@
     <div class="info">
       <p>&copy;Copyright 2018-2019 shujian.cn 版权所有</p>
       <p>增值电信业务经营许可证:粤XX-XXXXXXX</p>
-      <p>声明:本网站只做学习交流,不做任何商业用途</p>
+      <p>声明:本网站只用于学习交流,不做任何商业用途</p>
     </div>
   </div>
 </template>
